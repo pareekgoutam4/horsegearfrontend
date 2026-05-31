@@ -26,43 +26,69 @@ function Login() {
   };
 
   const handleFormSubmit = async (e) => {
-    e.preventDefault();
+  e.preventDefault();
 
-    if (loginData.email.trim() === "" || loginData.password.trim() === "") {
-      alert("All fields are required");
+  if (loginData.email.trim() === "" || loginData.password.trim() === "") {
+    alert("All fields are required");
+    return;
+  }
+
+  try {
+    setIsLoading(true);
+
+    // Admin Login Check
+    if (
+      loginData.email === "admin@gmail.com" &&
+      loginData.password === "admin123"
+    ) {
+      localStorage.setItem(
+        "user",
+        JSON.stringify({
+          email: "admin@gmail.com",
+          role: "admin",
+        })
+      );
+
+      alert("Admin Login Successful");
+      navigate("/admin/dashboard");
       return;
     }
 
-    try {
-      setIsLoading(true);
+    // Normal User Login
+    const response = await axios.get(
+      "https://horsegearbackend.onrender.com/user/getusers"
+    );
 
-    
-      const response = await axios.get("https://horsegearbackend.onrender.com/user/getusers");
-      const users = response.data;
+    const users = response.data;
 
-    
-      const validUser = users.find(
-        (item) => item.email === loginData.email && item.password === loginData.password
-      );
+    const validUser = users.find(
+      (item) =>
+        item.email === loginData.email &&
+        item.password === loginData.password
+    );
 
-      if (validUser) {
-        alert("Login Successful");
+    if (validUser) {
+      alert("Login Successful");
 
-     
-        localStorage.setItem("user", JSON.stringify(validUser));
+    localStorage.setItem(
+  "user",
+  JSON.stringify({
+    ...validUser,
+    role: "user",
+  })
+);
 
-      
-        navigate("/home");
-      } else {
-        alert("Invalid Email Or Password");
-      }
-    } catch (error) {
-      console.log(error);
-      alert("Something Went Wrong");
-    } finally {
-      setIsLoading(false);
+      navigate("/home");
+    } else {
+      alert("Invalid Email Or Password");
     }
-  };
+  } catch (error) {
+    console.log(error);
+    alert("Something Went Wrong");
+  } finally {
+    setIsLoading(false);
+  }
+};
 
   return (
     <>

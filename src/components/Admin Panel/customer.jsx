@@ -14,14 +14,22 @@ function Customer() {
   const [editid, seteditid] = useState(null);
 
   useEffect(() => {
-    const user = localStorage.getItem("user");
-    if (!user) {
-      alert("Please login first!");
-      navigate("/login");
-    } else {
-      datasign();
-    }
-  }, [navigate]);
+  const user = JSON.parse(localStorage.getItem("user"));
+
+  if (!user) {
+    alert("Please login first!");
+    navigate("/dailylogin");
+    return;
+  }
+
+  if (user.role !== "admin") {
+    alert("Access Denied! Admin Only");
+    navigate("/home");
+    return;
+  }
+
+  datasign();
+}, [navigate]);
 
   async function datasign() {
     try {

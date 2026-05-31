@@ -48,17 +48,24 @@ function Dashboard() {
   }
 
   useEffect(() => {
-    const user = localStorage.getItem("user");
-    if (!user) {
-      alert("Please login first to access Admin Panel!");
-      navigate("/login");
-      return;
-    }
+  const user = JSON.parse(localStorage.getItem("user"));
 
-    getCustomers();
-    getProducts();
-    getExtraDashboardData();
-  }, [navigate]);
+  if (!user) {
+    alert("Please login first!");
+    navigate("/dailylogin");
+    return;
+  }
+
+  if (user.role !== "admin") {
+    alert("Access Denied! Admin Only");
+    navigate("/home");
+    return;
+  }
+
+  getCustomers();
+  getProducts();
+  getExtraDashboardData();
+}, [navigate]);
 
   return (
     <div className="admin-panel-layout-wrapper">

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 function Fetch() {
   const [showForm, setShowForm] = useState(false);
@@ -15,6 +15,7 @@ function Fetch() {
   const [prdata, setprdata] = useState([]);
   const [deleteconfirm, setdeleteconfirm] = useState(null);
   const [editid, seteditid] = useState(null);
+  const navigate = useNavigate();
 
   function handleChange(e) {
     const { name, value } = e.target;
@@ -31,9 +32,23 @@ function Fetch() {
     }
   }
 
-  useEffect(() => {
-    prget();
-  }, []);
+useEffect(() => {
+  const user = JSON.parse(localStorage.getItem("user"));
+
+  if (!user) {
+    alert("Please login first!");
+    navigate("/dailylogin");
+    return;
+  }
+
+  if (user.role !== "admin") {
+    alert("Access Denied! Admin Only");
+    navigate("/home");
+    return;
+  }
+
+  prget();
+}, [navigate]);
 
   async function submit(e) {
     e.preventDefault();
