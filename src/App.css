@@ -3943,68 +3943,155 @@ html, body {
   color: #64748b;
 }
 
-/* ==========================================================================
-   4. SMART RESPONSIVE DESIGN INTERFACE (Mobile Adaptation)
-   ========================================================================== */
-@media (max-width: 1024px) {
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+
+/* Tablet */
+@media screen and (max-width: 1024px) {
+
+  .admin-panel-layout-wrapper {
+    grid-template-columns: 220px 1fr;
+  }
+
   .dashboard-lower-grid {
     grid-template-columns: 1fr;
   }
+
+  .admin-core-render-viewport {
+    padding: 25px;
+  }
+
+  .admin-statistics-cards-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
-@media (max-width: 768px) {
+
+/* Mobile */
+@media screen and (max-width: 768px) {
+
   .admin-panel-layout-wrapper {
-    grid-template-columns: 1fr;
-    grid-template-rows: auto 1fr;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 100vh;
     height: auto;
-    overflow-y: auto;
     position: relative;
+    overflow-x: hidden;
   }
 
   .admin-sidebar-navigation {
+    width: 100%;
     height: auto;
-    padding: 20px;
+    padding: 20px 15px;
     gap: 20px;
   }
 
-  .admin-brand-logo-frame {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 15px;
+  .admin-brand-logo-frame h2 {
+    font-size: 1.5rem;
   }
 
-  .admin-brand-logo-frame h2 {
-    margin: 0;
-    font-size: 1.4rem;
+  .admin-badge-tag {
+    font-size: 12px;
+    padding: 5px 12px;
   }
 
   .admin-sidebar-menu-links ul {
-    flex-direction: row;
+    display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 8px;
+    gap: 10px;
   }
 
   .admin-sidebar-menu-links ul li {
     padding: 10px 14px;
-    font-size: 0.9rem;
+    font-size: 14px;
+  }
+
+  .admin-workspace-content-canvas {
+    width: 100%;
+    overflow: visible;
   }
 
   .admin-core-render-viewport {
-    padding: 20px;
+    padding: 15px;
   }
 
   .admin-main-view-heading {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     text-align: center;
-    margin-bottom: 20px;
   }
 
   .admin-statistics-cards-grid {
     grid-template-columns: 1fr;
+  }
+
+  .stat-card-box {
+    padding: 18px;
+  }
+
+  .stat-card-box h3 {
+    font-size: 1.8rem;
+  }
+
+  .dashboard-lower-grid {
+    grid-template-columns: 1fr;
     gap: 15px;
+  }
+
+  .table-container-box,
+  .actions-container-box {
+    padding: 15px;
+  }
+
+  .custom-admin-table {
+    min-width: 600px;
+  }
+
+  .responsive-table-wrapper {
+    overflow-x: auto;
+  }
+
+  .action-btn {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+
+/* Small Mobile */
+@media screen and (max-width: 480px) {
+
+  .admin-core-render-viewport {
+    padding: 10px;
+  }
+
+  .admin-main-view-heading {
+    font-size: 1.3rem;
+  }
+
+  .admin-sidebar-menu-links ul {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .admin-sidebar-menu-links ul li {
+    width: 100%;
+    text-align: center;
+  }
+
+  .stat-card-box h3 {
+    font-size: 1.5rem;
+  }
+
+  .section-title {
+    font-size: 1rem;
+  }
+
+  .action-btn {
+    font-size: 13px;
+    padding: 10px;
   }
 }
 
@@ -4327,7 +4414,6 @@ html, body {
   }
 }
 
-/* मोबाइल स्क्रीन्स के लिए */
 @media (max-width: 480px) {
   .customer-view-header-row {
     flex-direction: column;

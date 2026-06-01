@@ -7,7 +7,7 @@ import Home from './components/pages/home'
 
 import './App.css'
 
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route, HashRouter } from "react-router-dom";
 import { CartProvider } from "react-use-cart";
 import Productdetail from './components/User Panel/productdetail';
 import Cart from './components/User Panel/cart';
@@ -28,7 +28,7 @@ function App() {
     <>
     <CartProvider>
 
-        <BrowserRouter>
+       <HashRouter>
       <Routes>
 
 
@@ -47,8 +47,8 @@ function App() {
         <Route path = "/adminproducts" element = {<Fetch/>}/>
        
       </Routes>
+      </HashRouter>
       
-      </BrowserRouter>
     </CartProvider>
   
      

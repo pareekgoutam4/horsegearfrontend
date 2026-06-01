@@ -36,7 +36,7 @@ function Login() {
   try {
     setIsLoading(true);
 
-    // Admin Login Check
+   
     if (
       loginData.email === "admin@gmail.com" &&
       loginData.password === "admin123"
@@ -54,7 +54,7 @@ function Login() {
       return;
     }
 
-    // Normal User Login
+   
     const response = await axios.get(
       "https://horsegearbackend.onrender.com/user/getusers"
     );
