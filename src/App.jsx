@@ -7,7 +7,7 @@ import Home from './components/pages/home'
 
 import './App.css'
 
-import { HashRouter, Routes, Route, HashRouter } from "react-router-dom";
+import {  Routes, Route, HashRouter } from "react-router-dom";
 import { CartProvider } from "react-use-cart";
 import Productdetail from './components/User Panel/productdetail';
 import Cart from './components/User Panel/cart';
