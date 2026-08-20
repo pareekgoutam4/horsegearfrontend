@@ -15,7 +15,7 @@ function Nav() {
     localStorage.removeItem("user");
     emptyCart();
     alert("Logout Successful");
-    navigate("/login");
+    navigate("/");
   };
 
   return (
