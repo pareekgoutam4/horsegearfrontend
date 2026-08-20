@@ -117,7 +117,7 @@ function Signup() {
           <div className="signup-form-side-panel">
             <div className="signup-form-header">
               <h2>Create Account</h2>
-              <p>Please fill in the details below</p>
+              <p> Click Here To See <Link className="home-btn" to="/">Home Page</Link></p>
             </div>
 
             <form onSubmit={submit} className="signup-actual-form-element">

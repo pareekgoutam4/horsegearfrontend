@@ -110,6 +110,7 @@ function Login() {
               <h2>Welcome Back</h2>
               <div className="login-promo-divider"></div>
               <p>Sign in to access your dashboard and orders.</p>
+            
             </div>
           </div>
         </div>
@@ -117,8 +118,9 @@ function Login() {
        
         <div className="login-form-side-panel">
           <div className="login-form-header">
+             
             <h2>Account Login</h2>
-            <p>Please enter your credentials to proceed</p>
+             <p> Click Here To See <Link className="home-btn" to="/">Home Page</Link></p>
           </div>
 
           <form onSubmit={handleFormSubmit} className="login-actual-form-element">
@@ -140,6 +142,7 @@ function Login() {
           </form>
 
           <p className="login-redirect-signup-footer-text">Don't have an account yet? <Link to="/signup">Register here</Link></p>
+         
         </div>
       </div>
     </main>
