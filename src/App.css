@@ -1,5 +1,6 @@
 /* 1. Global Reset */
-html, body {
+html,
+body {
   margin: 0 !important;
   padding: 0 !important;
   width: 100% !important;
@@ -13,7 +14,7 @@ html, body {
   font-family: 'Arial', sans-serif;
 }
 
-/* 2. Main Wrapper (Dono sides ki khali jagah khatam karne ke liye) */
+/* 2. Main Wrapper */
 .fullnav {
   width: 100vw;
   position: relative;
@@ -25,7 +26,7 @@ html, body {
 
 /* 3. Topbar Style */
 .topbar {
-  background-color:#795548;
+  background-color: #795548;
   color: #ffffff;
   display: flex;
   justify-content: space-between;
@@ -62,16 +63,16 @@ html, body {
   border-bottom: 1px solid #eeeeee;
 }
 
-/* LOGO SECTION (Image + Text Alignment) */
+/* LOGO SECTION  */
 .logo {
   display: flex;
   align-items: center;
-  gap: 12px; 
+  gap: 12px;
 }
 
 .logo img {
-  height: 40px;    
-  width: auto;    
+  height: 40px;
+  width: auto;
   object-fit: contain;
 }
 
@@ -132,12 +133,14 @@ html, body {
   text-align: center;
 }
 
-/* =================================================== */
-/* RESPONSIVE DESIGN (Mobile Friendly)                */
-/* =================================================== */
+
+/* RESPONSIVE DESIGN  */
+
 
 @media (max-width: 1024px) {
-  .topbar, .navbar {
+
+  .topbar,
+  .navbar {
     padding-left: 3%;
     padding-right: 3%;
   }
@@ -191,21 +194,21 @@ html, body {
   right: 50%;
   margin-left: -50vw;
   margin-right: -50vw;
-  
-  /* Adding your specific background image link */
+
+  /* background image link */
   background-image: url('https://horse.oceanwp.org/wp-content/uploads/2021/04/Sans-titre-1-1.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  
+
   display: flex;
   align-items: center;
-  justify-content: flex-end; 
+  justify-content: flex-end;
   padding: 0 10%;
   overflow: hidden;
 }
 
-/* Subtle Overlay for better text readability */
+/* Subtle */
 .banner-overlay {
   position: absolute;
   top: 0;
@@ -227,9 +230,9 @@ html, body {
   gap: 15px;
 }
 
-/* Typography styles matching image */
+/* image */
 .banner-title {
-  font-family: 'Impact', 'Arial Black', sans-serif; 
+  font-family: 'Impact', 'Arial Black', sans-serif;
   font-size: 3.5rem;
   font-weight: 900;
   letter-spacing: 2px;
@@ -272,7 +275,7 @@ html, body {
   transform: translateY(-2px);
 }
 
-/* Bottom subtle styled wave border layout as seen in screenshot */
+/* Bottom subtle */
 .hero-banner::after {
   content: '';
   position: absolute;
@@ -286,9 +289,8 @@ html, body {
 }
 
 
-/* =================================================== */
-/* RESPONSIVE DESIGN (Mobile & Tablet Friendly)         */
-/* =================================================== */
+
+/* RESPONSIVE DESIGN        */
 
 /* For Medium Screens & Tablets */
 @media (max-width: 992px) {
@@ -300,7 +302,7 @@ html, body {
   }
 
   .banner-overlay {
-    background: rgba(0, 0, 0, 0.5); 
+    background: rgba(0, 0, 0, 0.5);
   }
 
   .banner-content {
@@ -343,9 +345,7 @@ html, body {
   background-color: #ffffff;
 }
 
-/* ==========================================================================
-   1. Learn More Section (Three Cards Layout)
-   ========================================================================== */
+/*Learn More Section */
 
 .services-container {
   width: 100%;
@@ -364,21 +364,21 @@ html, body {
 .service-card {
   display: flex;
   flex-direction: column;
-  background-color: #FFF8F6; 
+  background-color: #FFF8F6;
   overflow: hidden;
 }
 
 .card-image {
   width: 100%;
-  height: 250px; 
+  height: 250px;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
-/* Actual Site Working Image Paths mapped perfectly */
+/* Actual Site  */
 .card-img-lessons {
-  background-image: url('https://horse.oceanwp.org/wp-content/uploads/2021/04/32_0000_Calque-4.png'); 
+  background-image: url('https://horse.oceanwp.org/wp-content/uploads/2021/04/32_0000_Calque-4.png');
 }
 
 .card-img-jumping {
@@ -418,7 +418,7 @@ html, body {
 .learn-more-btn {
   font-size: 0.85rem;
   font-weight: 700;
-  color: #7A635B; 
+  color: #7A635B;
   text-decoration: none;
   letter-spacing: 1px;
   text-transform: uppercase;
@@ -438,12 +438,10 @@ html, body {
 
 
 
-/* Featured Productsssss Designnnnnnnnnnnnnnnnnnnn */ 
+/* Featured Productsssss Designnnnnnnnnnnnnnnnnnnn */
 
 
-/* ==========================================================================
-   MAIN CONTAINMENT FRAMEWORK
-   ========================================================================== */
+/*  MAIN CONTAINMENT FRAMEWORK */
 .featured-products-section {
   width: 100%;
   max-width: 1200px;
@@ -455,7 +453,7 @@ html, body {
   background-color: #ffffff;
 }
 
-/* Header Config & Striped Line Divider Pattern */
+/* Header Config & Striped Line*/
 .products-header {
   margin-bottom: 65px;
   display: flex;
@@ -475,19 +473,15 @@ html, body {
 .products-divider {
   width: 140px;
   height: 10px;
-  background: repeating-linear-gradient(
-    45deg, 
-    #7A635B, 
-    #7A635B 2px, 
-    transparent 2px, 
-    transparent 8px
-  );
+  background: repeating-linear-gradient(45deg,
+      #7A635B,
+      #7A635B 2px,
+      transparent 2px,
+      transparent 8px);
   opacity: 0.85;
 }
 
-/* ==========================================================================
-   4-COLUMN GRID CONFIGURATION WITH CLICKABLE WRAPPER
-   ========================================================================== */
+/* COLUMN GRID CONFIGURATION WITH CLICKABLE WRAPPER*/
 .products-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -495,10 +489,10 @@ html, body {
   row-gap: 55px;
 }
 
-/* 💡 PREMIUM ADDITION: Clickable Outer Link Wrapper Setup */
+/*  Link Wrapper Setup */
 .product-card-clickable-wrapper {
   text-decoration: none;
-  color: inherit;        
+  color: inherit;
   display: block;
   outline: none;
 }
@@ -511,14 +505,12 @@ html, body {
   position: relative;
   text-align: center;
   border-radius: 6px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.02); 
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.02);
   overflow: hidden;
   transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
-/* ==========================================================================
-   IMAGE CONTAINER & HOVER EFFECTS
-   ========================================================================== */
+/* IMAGE CONTAINER & HOVER EFFECTS*/
 .product-image-box {
   width: 100%;
   height: 290px;
@@ -609,12 +601,10 @@ html, body {
   background-color: #634F48;
 }
 
-/* ==========================================================================
-   CARD HOVER STATES INTERACTIONS (Triggered via Clickable Wrapper)
-   ========================================================================== */
+/* CARD HOVER STATES INTERACTIONS */
 .product-card-clickable-wrapper:hover .product-card {
   transform: translateY(-5px);
-  box-shadow: 0 12px 30px rgba(122, 99, 91, 0.08); 
+  box-shadow: 0 12px 30px rgba(122, 99, 91, 0.08);
 }
 
 .product-card-clickable-wrapper:hover .product-hover-overlay {
@@ -638,9 +628,7 @@ html, body {
   color: #7A635B;
 }
 
-/* ==========================================================================
-   TYPOGRAPHY & PRODUCT TEXT SPECIFICATIONS
-   ========================================================================== */
+/* TYPOGRAPHY & PRODUCT TEXT SPECIFICATIONS */
 .product-info {
   padding: 22px 14px 16px 14px;
   display: flex;
@@ -690,9 +678,7 @@ html, body {
   padding: 40px 0;
 }
 
-/* ==========================================================================
-   RESPONSIVE LAYOUT RESPONSIVENESS MEDIA ADJUSTMENTS
-   ========================================================================== */
+/* RESPONSIVE LAYOUT RESPONSIVENESS MEDIA ADJUSTMENTS */
 
 /* Medium Laptop Displays */
 @media (max-width: 1150px) {
@@ -705,32 +691,45 @@ html, body {
 
 /* Tablets Views screens */
 @media (max-width: 768px) {
-  .products-main-title { font-size: 1.9rem; }
+  .products-main-title {
+    font-size: 1.9rem;
+  }
+
   .products-grid {
-    grid-template-columns: repeat(2, 1fr); 
+    grid-template-columns: repeat(2, 1fr);
     column-gap: 20px;
     row-gap: 40px;
   }
-  .product-image-box { height: 250px; }
+
+  .product-image-box {
+    height: 250px;
+  }
 }
 
 /* Small Smartphone Panels */
 @media (max-width: 480px) {
-  .featured-products-section { padding: 50px 15px; }
-  .products-main-title { font-size: 1.6rem; }
+  .featured-products-section {
+    padding: 50px 15px;
+  }
+
+  .products-main-title {
+    font-size: 1.6rem;
+  }
+
   .products-grid {
     grid-template-columns: 1fr;
     row-gap: 35px;
   }
-  .product-image-box { height: 280px; }
+
+  .product-image-box {
+    height: 280px;
+  }
 }
 
 /*Product Detail page Designnnnnnnnnnnnnnnnnnnnnnnnnnn*/
 
 
-/* ==========================================================================
-   1. CONTAINER FRAMEWORK
-   ========================================================================== */
+/* CONTAINER FRAMEWORK */
 .product-detail-container {
   width: 100%;
   max-width: 1200px;
@@ -748,9 +747,7 @@ html, body {
   align-items: flex-start;
 }
 
-/* ==========================================================================
-   2. NEW: GALLERY & THUMBNAILS MODULE
-   ========================================================================== */
+/* NEW: GALLERY & THUMBNAILS MODULE */
 .gallery-container-block {
   display: flex;
   flex-direction: column;
@@ -817,9 +814,7 @@ html, body {
   box-shadow: 0 4px 10px rgba(122, 99, 91, 0.08);
 }
 
-/* ==========================================================================
-   3. RIGHT PANEL - META CONTENT
-   ========================================================================== */
+/*  RIGHT PANEL - META CONTENT */
 .detail-info-wrapper {
   text-align: left;
   display: flex;
@@ -917,7 +912,9 @@ html, body {
   color: #555555;
 }
 
-.quantity-counter button:hover { background-color: #F5F5F5; }
+.quantity-counter button:hover {
+  background-color: #F5F5F5;
+}
 
 .quantity-counter span {
   width: 40px;
@@ -958,9 +955,18 @@ html, body {
   border: 1px dashed #E6DFDC;
 }
 
-.badge-item { display: flex; align-items: center; gap: 8px; }
+.badge-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
 .badge-item p {
-  margin: 0; font-size: 0.8rem; font-weight: 700; color: #7A635B; text-transform: uppercase;
+  margin: 0;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #7A635B;
+  text-transform: uppercase;
 }
 
 .detail-footer-meta {
@@ -970,36 +976,94 @@ html, body {
   flex-direction: column;
   gap: 8px;
 }
-.detail-footer-meta p { font-size: 0.85rem; color: #666666; margin: 0; }
-.detail-footer-meta p span { font-weight: bold; color: #2C2C2C; }
 
-/* ==========================================================================
-   4. TABS COMPONENT
-   ========================================================================== */
+.detail-footer-meta p {
+  font-size: 0.85rem;
+  color: #666666;
+  margin: 0;
+}
+
+.detail-footer-meta p span {
+  font-weight: bold;
+  color: #2C2C2C;
+}
+
+/*  TABS COMPONENT */
+
+
 .product-details-tabs-section {
   margin-top: 70px;
   border-top: 1px solid #EAEAEA;
   padding-top: 40px;
 }
 
-.tabs-header-buttons { display: flex; justify-content: center; gap: 30px; margin-bottom: 30px; }
+.tabs-header-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
 .tab-btn {
-  background: none; border: none; font-size: 1.05rem; font-weight: 700; color: #999999; cursor: pointer; padding: 8px 16px; position: relative;
+  background: none;
+  border: none;
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #999999;
+  cursor: pointer;
+  padding: 8px 16px;
+  position: relative;
 }
-.tab-btn:hover, .tab-btn.active { color: #7A635B; }
+
+.tab-btn:hover,
+.tab-btn.active {
+  color: #7A635B;
+}
+
 .tab-btn.active::after {
-  content: ""; position: absolute; bottom: 0; left: 16px; right: 16px; height: 3px; background-color: #7A635B; border-radius: 2px;
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 16px;
+  right: 16px;
+  height: 3px;
+  background-color: #7A635B;
+  border-radius: 2px;
 }
-.tab-content-display { max-width: 850px; margin: 0 auto; text-align: left; }
-.tab-pane-text p { font-size: 0.94rem; line-height: 1.7; color: #666666; }
 
-.specification-table { width: 100%; border-collapse: collapse; }
-.specification-table td { padding: 14px 18px; border-bottom: 1px solid #F0F0F0; font-size: 0.9rem; color: #555555; }
-.specification-table td:first-child { font-weight: 700; color: #1A1A1A; width: 30%; }
+.tab-content-display {
+  max-width: 850px;
+  margin: 0 auto;
+  text-align: left;
+}
 
-/* ==========================================================================
-   5. NEW: RELATED PRODUCTS MODULE GRID SETUP
-   ========================================================================== */
+.tab-pane-text p {
+  font-size: 0.94rem;
+  line-height: 1.7;
+  color: #666666;
+}
+
+.specification-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.specification-table td {
+  padding: 14px 18px;
+  border-bottom: 1px solid #F0F0F0;
+  font-size: 0.9rem;
+  color: #555555;
+}
+
+.specification-table td:first-child {
+  font-weight: 700;
+  color: #1A1A1A;
+  width: 30%;
+}
+
+/* NEW: RELATED PRODUCTS MODULE GRID SETUP */
+
+
 .related-products-section {
   margin-top: 90px;
   border-top: 1px solid #EAEAEA;
@@ -1106,33 +1170,97 @@ html, body {
   font-style: italic;
 }
 
-.detail-loading, .detail-error-box { text-align: center; padding: 140px 20px; font-size: 1.2rem; font-weight: bold; color: #7A635B; }
-.back-shop-btn { display: inline-block; margin-top: 25px; padding: 12px 30px; background-color: #1A1A1A; color: #ffffff; text-decoration: none; font-weight: bold; border-radius: 4px; }
+.detail-loading,
+.detail-error-box {
+  text-align: center;
+  padding: 140px 20px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #7A635B;
+}
 
-/* ==========================================================================
-   6. RESPONSIVE BREAKPOINTS MEDIA QUERIES
-   ========================================================================== */
+.back-shop-btn {
+  display: inline-block;
+  margin-top: 25px;
+  padding: 12px 30px;
+  background-color: #1A1A1A;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 4px;
+}
+
+/* RESPONSIVE BREAKPOINTS MEDIA QUERIES */
+
+
 @media (max-width: 1024px) {
-  .related-products-grid { grid-template-columns: repeat(3, 1fr); }
+  .related-products-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 @media (max-width: 900px) {
-  .detail-layout-grid { grid-template-columns: 1fr; gap: 40px; }
-  .detail-image-wrapper { height: 400px; }
-  .thumbnail-box { height: 85px; }
-  .detail-info-wrapper { align-items: center; text-align: center; }
-  .related-products-grid { grid-template-columns: repeat(2, 1fr); }
+  .detail-layout-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .detail-image-wrapper {
+    height: 400px;
+  }
+
+  .thumbnail-box {
+    height: 85px;
+  }
+
+  .detail-info-wrapper {
+    align-items: center;
+    text-align: center;
+  }
+
+  .related-products-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media (max-width: 480px) {
-  .detail-image-wrapper { height: 280px; }
-  .thumbnail-box { height: 65px; padding: 4px; }
-  .purchase-actions-row { flex-direction: column; align-items: stretch; }
-  .detail-add-cart-btn { width: 100%; }
-  .related-products-grid { grid-template-columns: 1fr; }
-  .trust-badges-container { flex-direction: column; gap: 10px; width: 100%; }
-  .specification-table td { display: block; width: 100% !important; padding: 8px 10px; }
-  .specification-table td:first-child { border-bottom: none; }
+  .detail-image-wrapper {
+    height: 280px;
+  }
+
+  .thumbnail-box {
+    height: 65px;
+    padding: 4px;
+  }
+
+  .purchase-actions-row {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .detail-add-cart-btn {
+    width: 100%;
+  }
+
+  .related-products-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .trust-badges-container {
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+  }
+
+  .specification-table td {
+    display: block;
+    width: 100% !important;
+    padding: 8px 10px;
+  }
+
+  .specification-table td:first-child {
+    border-bottom: none;
+  }
 }
 
 
@@ -1140,9 +1268,7 @@ html, body {
 
 
 
-/* ==========================================================================
-   Our Brands Section (Edge to Edge 8-Logo Row Layout)
-   ========================================================================== */
+/* Our Brands Section  */
 
 .brands-section {
   width: 100vw;
@@ -1151,7 +1277,7 @@ html, body {
   right: 50%;
   margin-left: -50vw;
   margin-right: -50vw;
-  padding: 60px 40px; 
+  padding: 60px 40px;
   text-align: center;
   font-family: 'Arial Black', 'Arial', sans-serif;
   background-color: #ffffff;
@@ -1169,7 +1295,7 @@ html, body {
 .brands-grid {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between; 
+  justify-content: space-between;
   align-items: center;
   width: 100%;
   max-width: 100%;
@@ -1181,7 +1307,7 @@ html, body {
   justify-content: center;
   align-items: center;
   padding: 5px;
-  transition: transform 0.3s ease; 
+  transition: transform 0.3s ease;
   flex: 1 1 calc(12.5% - 15px);
   min-width: 110px;
 }
@@ -1192,15 +1318,13 @@ html, body {
 
 .brand-logo {
   width: 100%;
-  max-width: 140px; 
+  max-width: 140px;
   height: auto;
   object-fit: contain;
 }
 
 
-/* ==========================================================================
-   3. Common Responsive Media Queries
-   ========================================================================== */
+/*  Common Responsive Media Queries */
 
 /* Tablets Screens (992px) */
 @media (max-width: 992px) {
@@ -1208,8 +1332,9 @@ html, body {
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
   }
+
   .brand-item {
-    flex: 1 1 calc(25% - 15px); 
+    flex: 1 1 calc(25% - 15px);
   }
 }
 
@@ -1219,12 +1344,15 @@ html, body {
     grid-template-columns: 1fr;
     gap: 25px;
   }
+
   .card-image {
     height: 220px;
   }
+
   .card-content {
     padding: 25px 20px;
   }
+
   .brand-item {
     flex: 1 1 calc(50% - 15px);
   }
@@ -1244,12 +1372,12 @@ html, body {
 /* Base Section Layout */
 .choose-us-section {
   width: 100%;
-  max-width: 1140px; 
+  max-width: 1140px;
   margin: 0 auto;
   padding: 80px 20px;
   box-sizing: border-box;
   text-align: center;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color: #ffffff;
 }
 
@@ -1270,17 +1398,15 @@ html, body {
   letter-spacing: 0.5px;
 }
 
-/* Striped Divider Pattern line under Heading */
+/* Striped Divider */
 .title-divider {
   width: 140px;
   height: 10px;
-  background: repeating-linear-gradient(
-    45deg,
-    #7A635B,
-    #7A635B 2px,
-    transparent 2px,
-    transparent 8px
-  );
+  background: repeating-linear-gradient(45deg,
+      #7A635B,
+      #7A635B 2px,
+      transparent 2px,
+      transparent 8px);
   opacity: 0.8;
 }
 
@@ -1289,7 +1415,7 @@ html, body {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   column-gap: 50px;
-  row-gap: 60px; 
+  row-gap: 60px;
 }
 
 /* Individual Card Blocks */
@@ -1305,7 +1431,7 @@ html, body {
 .icon-circle {
   width: 120px;
   height: 120px;
-  background-color: #7A635B; 
+  background-color: #7A635B;
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -1328,35 +1454,36 @@ html, body {
   width: 48px;
   height: 48px;
   object-fit: contain;
-  filter: brightness(0) invert(1); 
+  filter: brightness(0) invert(1);
   opacity: 0.95;
 }
 
 /* Title Styling (Text Chhota Kiya) */
 .feature-title {
   font-family: 'Arial Black', sans-serif;
-  font-size: 14px; 
+  font-size: 14px;
   font-weight: 900;
   color: #1A1A1A;
   margin: 0 0 10px 0;
   letter-spacing: 0.3px;
 }
 
-/* Description Text Styling (Text Chhota Kiya) */
+/* Description Text Styling */
 .feature-desc {
   font-size: 12px;
   line-height: 1.6;
-  color: #777777; 
+  color: #777777;
   max-width: 260px;
   margin: 0;
 }
 
-/* ==========================================================================
-   Responsive Breakpoints
-   ========================================================================== */
+/* Responsive Breakpoints */
 
 @media (max-width: 992px) {
-  .section-main-title { font-size: 1.9rem; }
+  .section-main-title {
+    font-size: 1.9rem;
+  }
+
   .features-grid {
     grid-template-columns: repeat(2, 1fr);
     column-gap: 30px;
@@ -1365,11 +1492,28 @@ html, body {
 }
 
 @media (max-width: 600px) {
-  .choose-us-section { padding: 50px 15px; }
-  .section-main-title { font-size: 1.6rem; }
-  .features-grid { grid-template-columns: 1fr; row-gap: 40px; }
-  .icon-circle { width: 110px; height: 110px; }
-  .feature-icon { width: 42px; height: 42px; }
+  .choose-us-section {
+    padding: 50px 15px;
+  }
+
+  .section-main-title {
+    font-size: 1.6rem;
+  }
+
+  .features-grid {
+    grid-template-columns: 1fr;
+    row-gap: 40px;
+  }
+
+  .icon-circle {
+    width: 110px;
+    height: 110px;
+  }
+
+  .feature-icon {
+    width: 42px;
+    height: 42px;
+  }
 }
 
 
@@ -1377,14 +1521,14 @@ html, body {
 
 
 .ready-ride-section {
- 
-  width: 100vw; 
+
+  width: 100vw;
   position: relative;
   left: 50%;
   right: 50%;
   margin-left: -50vw;
   margin-right: -50vw;
-  
+
   height: 520px;
   background-image: url('https://images.unsplash.com/photo-1624125278758-c0572f6ebc55?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fGhvcnNlJTIwcmlkaW5nJTIwYmFja2dyb3VuZHxlbnwwfHwwfHx8MA%3D%3D');
   background-size: cover;
@@ -1399,20 +1543,18 @@ html, body {
 .ready-ride-overlay {
   width: 100%;
   height: 100%;
-  background: linear-gradient(
-    90deg, 
-    rgba(110, 90, 80, 0.8) 0%, 
-    rgba(110, 90, 80, 0.4) 60%, 
-    transparent 100%
-  );
+  background: linear-gradient(90deg,
+      rgba(110, 90, 80, 0.8) 0%,
+      rgba(110, 90, 80, 0.4) 60%,
+      transparent 100%);
   display: flex;
   align-items: center;
-  
-  padding: 0 calc(50vw - 570px + 20px); 
+
+  padding: 0 calc(50vw - 570px + 20px);
   box-sizing: border-box;
 }
 
-/* Responsive breakout adjustments for global alignment */
+/* Responsive breakout  */
 @media (max-width: 1200px) {
   .ready-ride-overlay {
     padding: 0 60px;
@@ -1451,13 +1593,11 @@ html, body {
 .ride-divider {
   width: 150px;
   height: 10px;
-  background: repeating-linear-gradient(
-    45deg,
-    rgba(255, 255, 255, 0.4),
-    rgba(255, 255, 255, 0.4) 2px,
-    transparent 2px,
-    transparent 8px
-  );
+  background: repeating-linear-gradient(45deg,
+      rgba(255, 255, 255, 0.4),
+      rgba(255, 255, 255, 0.4) 2px,
+      transparent 2px,
+      transparent 8px);
   margin-bottom: 35px;
 }
 
@@ -1482,15 +1622,14 @@ html, body {
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
-/* ==========================================================================
-   Responsive Breakpoints for Smaller Screens
-   ========================================================================== */
+/* Responsive Breakpoints */
 
 @media (max-width: 992px) {
   .ready-ride-overlay {
     padding: 0 45px;
-    background: rgba(110, 90, 80, 0.7); 
+    background: rgba(110, 90, 80, 0.7);
   }
+
   .ride-title {
     font-size: 2.3rem;
   }
@@ -1500,21 +1639,26 @@ html, body {
   .ready-ride-section {
     height: 440px;
   }
+
   .ready-ride-overlay {
     padding: 0 25px;
     justify-content: center;
-    background: rgba(85, 70, 62, 0.8); 
+    background: rgba(85, 70, 62, 0.8);
   }
+
   .ready-ride-content {
     align-items: center;
     text-align: center;
   }
+
   .ride-title {
     font-size: 1.8rem;
   }
+
   .ride-description {
     font-size: 0.88rem;
   }
+
   .discover-btn {
     padding: 12px 28px;
     font-size: 0.8rem;
@@ -1531,7 +1675,7 @@ html, body {
 /* Base Section Layout */
 .testimonials-section {
   width: 100%;
-  max-width: 1200px; 
+  max-width: 1200px;
   margin: 0 auto;
   padding: 80px 20px;
   box-sizing: border-box;
@@ -1561,13 +1705,11 @@ html, body {
 .testimonials-divider {
   width: 150px;
   height: 10px;
-  background: repeating-linear-gradient(
-    45deg,
-    #7A635B,
-    #7A635B 2px,
-    transparent 2px,
-    transparent 8px
-  );
+  background: repeating-linear-gradient(45deg,
+      #7A635B,
+      #7A635B 2px,
+      transparent 2px,
+      transparent 8px);
   opacity: 0.8;
 }
 
@@ -1575,8 +1717,8 @@ html, body {
 .testimonials-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  column-gap: 80px; 
-  row-gap: 60px;   
+  column-gap: 80px;
+  row-gap: 60px;
 }
 
 /* Individual Review Card Framework */
@@ -1596,13 +1738,13 @@ html, body {
   color: #E2DDD9;
   height: 40px;
   margin-bottom: 10px;
- 
+
 }
 
 /* Italicized Description Text Styling */
 .testimonial-text {
   font-size: 0.95rem;
-  font-style: italic; 
+  font-style: italic;
   line-height: 1.7;
   color: #555555;
   max-width: 480px;
@@ -1617,7 +1759,7 @@ html, body {
   margin-bottom: 8px;
 }
 
-/* Rounded Square User Avatars (Choti Images) */
+/* Rounded Square User Avatars*/
 .user-avatar {
   width: 50px;
   height: 50px;
@@ -1647,7 +1789,7 @@ html, body {
 /* Star Icons Color Adjustments */
 .star {
   font-size: 1.2rem;
- 
+
 }
 
 .filled-star {
@@ -1658,28 +1800,29 @@ html, body {
   color: #D3D3D3;
 }
 
-/* ==========================================================================
-   Responsive Breakpoints for Smaller Devices
-   ========================================================================== */
+/* Responsive Breakpoints  */
 
 @media (max-width: 992px) {
   .testimonials-grid {
     column-gap: 40px;
   }
+
   .testimonials-main-title {
     font-size: 1.9rem;
   }
 }
 
-/* Converts 2-Columns layout to 1-Column stack on Mobile Screens */
+/* Converts 2-Columns layout  */
 @media (max-width: 768px) {
   .testimonials-section {
     padding: 50px 15px;
   }
+
   .testimonials-grid {
     grid-template-columns: 1fr;
     row-gap: 45px;
   }
+
   .testimonial-text {
     font-size: 0.9rem;
   }
@@ -1721,17 +1864,15 @@ html, body {
 .news-divider {
   width: 140px;
   height: 10px;
-  background: repeating-linear-gradient(
-    45deg, 
-    #7A635B, 
-    #7A635B 2px, 
-    transparent 2px, 
-    transparent 8px
-  );
+  background: repeating-linear-gradient(45deg,
+      #7A635B,
+      #7A635B 2px,
+      transparent 2px,
+      transparent 8px);
   opacity: 0.8;
 }
 
-/* Outer Wrapper - Left-Right padding for outer buttons */
+/* Outer Wrapper  */
 .slider-outer-wrapper {
   display: flex;
   align-items: center;
@@ -1743,7 +1884,7 @@ html, body {
 
 .news-swiper {
   width: 100%;
-  padding: 10px 5px 60px 5px !important; 
+  padding: 10px 5px 60px 5px !important;
 }
 
 /* Individual News Card Block */
@@ -1779,31 +1920,31 @@ html, body {
   flex-grow: 1;
 }
 
-/* Title Styling (Thoda chhota aur professional look) */
+/* Title Styling */
 .news-card-title {
   font-family: 'Arial Black', sans-serif;
-  font-size: 0.95rem; 
+  font-size: 0.95rem;
   font-weight: 900;
   color: #1A1A1A;
   margin: 0 0 12px 0;
   line-height: 1.4;
   letter-spacing: 0.2px;
-  min-height: 44px; 
+  min-height: 44px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-/* Description Typography (Text size optimized) */
+/* Description Typography  */
 .news-card-desc {
-  font-size: 0.82rem; 
+  font-size: 0.82rem;
   color: #666666;
   max-width: 270px;
   margin: 0 0 25px 0;
-  flex-grow: 1; 
+  flex-grow: 1;
 }
 
-/* Premium Underline Button Style (Perfect Horizontal Alignment) */
+/* Premium Underline Button Style  */
 .news-learn-more {
   font-size: 0.78rem;
   font-weight: 800;
@@ -1811,7 +1952,7 @@ html, body {
   text-decoration: none;
   border-bottom: 2px solid #1A1A1A;
   padding-bottom: 2px;
-  letter-spacing: 0.8px; 
+  letter-spacing: 0.8px;
   text-transform: uppercase;
   transition: all 0.25s ease;
   margin-top: auto;
@@ -1822,9 +1963,8 @@ html, body {
   border-color: #7A635B;
 }
 
-/* ==========================================================================
-   Premium & Smaller Arrows Positioned Completely Outside Image Boundary
-   ========================================================================== */
+/*  Outside Image Boundary */
+
 
 .custom-swiper-button-next,
 .custom-swiper-button-prev {
@@ -1868,15 +2008,27 @@ html, body {
   height: 7px;
 }
 
-/* ==========================================================================
-   Responsive Viewport Fixes
-   ========================================================================== */
+/* Responsive Viewport Fixes */
+
+
+
 @media (max-width: 768px) {
-  .slider-outer-wrapper { gap: 0; }
+  .slider-outer-wrapper {
+    gap: 0;
+  }
+
   .custom-swiper-button-next,
-  .custom-swiper-button-prev { display: none; }
-  .news-main-title { font-size: 1.7rem; }
-  .news-swiper { padding-bottom: 40px !important; }
+  .custom-swiper-button-prev {
+    display: none;
+  }
+
+  .news-main-title {
+    font-size: 1.7rem;
+  }
+
+  .news-swiper {
+    padding-bottom: 40px !important;
+  }
 }
 
 
@@ -1884,18 +2036,18 @@ html, body {
 /* Footer banner  Designnnnnnnnnnnnnnnnnn */
 
 
-/* ==========================================================================
-   GLOBAL RESET & FULL-WIDTH BREAKOUT (To fix edge gaps)
-   ========================================================================== */
+/* GLOBAL RESET & FULL-WIDTH BREAKOUT  */
+
+
 .footer-container {
- 
+
   width: 100vw;
   position: relative;
   left: 50%;
   right: 50%;
   margin-left: -50vw;
   margin-right: -50vw;
-  
+
   /* Running horses background loaded via CSS */
   background-image: url('https://images.unsplash.com/photo-1683199841112-597b775b9c54?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8d2lsZCUyMGhvcnNlcyUyMHJ1bm5pbmclMjBkdXN0JTIwbGFuZHNjYXBlJTIwcGhvdG9ncmFwaHl8ZW58MHx8MHx8fDA%3D');
   background-size: cover;
@@ -1906,22 +2058,18 @@ html, body {
   overflow: hidden;
 }
 
-/* Dark Sepia / Copper Overlay Tint to match the exact theme overlay */
+/* Dark Sepia */
 .footer-overlay {
   width: 100%;
   height: 100%;
-  background: linear-gradient(
-    180deg,
-    rgba(105, 80, 70, 0.93) 0%,
-    rgba(90, 65, 55, 0.96) 100%
-  );
+  background: linear-gradient(180deg,
+      rgba(105, 80, 70, 0.93) 0%,
+      rgba(90, 65, 55, 0.96) 100%);
   padding: 70px 40px 25px 40px;
   box-sizing: border-box;
 }
 
-/* ==========================================================================
-   SECTION 1: TOP FEATURE ITEMS (4-COLUMNS GRID)
-   ========================================================================== */
+/*TOP FEATURE ITEMS*/
 .footer-features-row {
   max-width: 1200px;
   margin: 0 auto;
@@ -1993,9 +2141,7 @@ html, body {
   margin: 0 auto 45px auto;
 }
 
-/* ==========================================================================
-   SECTION 2: MIDDLE INFORMATION PANEL (LEFT INFO & RIGHT SOCIAL)
-   ========================================================================== */
+/* MIDDLE INFORMATION PANEL  */
 .footer-middle-row {
   max-width: 1200px;
   margin: 0 auto;
@@ -2064,14 +2210,24 @@ html, body {
 }
 
 /* Branding color matches from your image palette setup */
-.instagram-color { background-color: #262626; border: 1px solid rgba(255, 255, 255, 0.1); }
-.facebook-color  { background-color: #3b5998; }
-.twitter-color   { background-color: #1da1f2; }
-.youtube-color   { background-color: #cd201f; }
+.instagram-color {
+  background-color: #262626;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
 
-/* ==========================================================================
-   SECTION 3: BASE COPYRIGHT BAR CREDIT
-   ========================================================================== */
+.facebook-color {
+  background-color: #3b5998;
+}
+
+.twitter-color {
+  background-color: #1da1f2;
+}
+
+.youtube-color {
+  background-color: #cd201f;
+}
+
+/* BASE COPYRIGHT BAR CREDIT */
 .footer-bottom-bar {
   border-top: 1px solid rgba(255, 255, 255, 0.07);
   padding-top: 25px;
@@ -2081,48 +2237,46 @@ html, body {
   letter-spacing: 0.3px;
 }
 
-/* ==========================================================================
-   RESPONSIVE MEDIA BREAKPOINTS
-   ========================================================================== */
+/* RESPONSIVE MEDIA BREAKPOINTS */
 
-/* Tablets Viewports (Converts 4-cols features into 2x2 rows and stacks info) */
+/* Tablets Viewports*/
 @media (max-width: 1024px) {
   .footer-features-row {
     grid-template-columns: repeat(2, 1fr);
     gap: 30px;
   }
-  
+
   .footer-middle-row {
     flex-direction: column;
     gap: 35px;
   }
-  
+
   .footer-social-block {
     align-self: flex-start;
   }
 }
 
-/* Mobile Phones Viewports (Converts everything into a clean vertical list stack) */
+/* Mobile Phones Viewports */
 @media (max-width: 576px) {
   .footer-overlay {
     padding: 50px 20px 20px 20px;
   }
-  
+
   .footer-features-row {
     grid-template-columns: 1fr;
     gap: 25px;
   }
-  
+
   .feature-icon-circle {
     width: 55px;
     height: 55px;
   }
-  
+
   .contact-meta {
     flex-direction: column;
     gap: 10px;
   }
-  
+
   .footer-desc {
     font-size: 0.82rem;
   }
@@ -2158,9 +2312,8 @@ html, body {
   border-radius: 2px;
 }
 
-/* ==========================================================================
-   EMPTY CART FALLBACK DESIGN SCREEN
-   ========================================================================== */
+/* EMPTY CART FALLBACK DESIGN SCREEN */
+
 .empty-cart-view {
   text-align: center;
   padding: 80px 20px;
@@ -2198,11 +2351,14 @@ html, body {
   transition: background-color 0.2s ease;
 }
 
-.return-shop-btn:hover { background-color: #634F48; }
+.return-shop-btn:hover {
+  background-color: #634F48;
+}
 
-/* ==========================================================================
-   ACTIVE CART ROW & TABLES COLUMN STRUCTURES
-   ========================================================================== */
+/* ACTIVE CART ROW & TABLES COLUMN STRUCTURES */
+
+
+
 .cart-workspace-grid {
   display: grid;
   grid-template-columns: 2.8fr 1.2fr;
@@ -2260,8 +2416,16 @@ html, body {
   color: #2C2C2C;
 }
 
-.cart-table-price { color: #666666; font-size: 0.95rem; }
-.cart-table-subtotal { color: #619667; font-weight: 700; font-size: 1rem; }
+.cart-table-price {
+  color: #666666;
+  font-size: 0.95rem;
+}
+
+.cart-table-subtotal {
+  color: #619667;
+  font-weight: 700;
+  font-size: 1rem;
+}
 
 /* Quantity controller adjustments layout */
 .cart-quantity-box {
@@ -2283,8 +2447,16 @@ html, body {
   color: #555555;
 }
 
-.cart-quantity-box button:hover { background-color: #F5F5F5; }
-.cart-quantity-box span { width: 40px; text-align: center; font-size: 0.9rem; font-weight: bold; }
+.cart-quantity-box button:hover {
+  background-color: #F5F5F5;
+}
+
+.cart-quantity-box span {
+  width: 40px;
+  text-align: center;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
 
 .cart-delete-btn {
   background: none;
@@ -2294,7 +2466,10 @@ html, body {
   cursor: pointer;
   line-height: 1;
 }
-.cart-delete-btn:hover { color: #C93B3B; }
+
+.cart-delete-btn:hover {
+  color: #C93B3B;
+}
 
 /* Utility actions footer bar link row */
 .cart-table-actions-row {
@@ -2322,13 +2497,17 @@ html, body {
   cursor: pointer;
   text-transform: uppercase;
 }
-.clear-cart-full-btn:hover { background-color: #FAFAFA; border-color: #999999; }
 
-/* ==========================================================================
-   4. RIGHT PANEL - FINANCIAL CALCULATIONS CARD SUMMARY
-   ========================================================================== */
+.clear-cart-full-btn:hover {
+  background-color: #FAFAFA;
+  border-color: #999999;
+}
+
+/* 4. RIGHT PANEL - FINANCIAL CALCULATIONS CARD SUMMARY */
+
+
 .cart-totals-summary-card {
-  background-color: #FAF8F7; 
+  background-color: #FAF8F7;
   border: 1px solid #E6DFDC;
   padding: 30px;
   border-radius: 6px;
@@ -2352,16 +2531,31 @@ html, body {
   color: #555555;
 }
 
-.totals-bold-text { font-weight: 700; color: #1A1A1A; }
-.shipping-text-badge { font-weight: 800; color: #619667; }
-.totals-row-divider { border-top: 1px solid #E6DFDC; margin: 15px 0; }
+.totals-bold-text {
+  font-weight: 700;
+  color: #1A1A1A;
+}
+
+.shipping-text-badge {
+  font-weight: 800;
+  color: #619667;
+}
+
+.totals-row-divider {
+  border-top: 1px solid #E6DFDC;
+  margin: 15px 0;
+}
 
 .final-checkout-total {
   font-size: 1.15rem;
   color: #1A1A1A;
   font-weight: bold;
 }
-.grand-total-price-text { color: #619667; font-size: 1.3rem; }
+
+.grand-total-price-text {
+  color: #619667;
+  font-size: 1.3rem;
+}
 
 .proceed-checkout-btn {
   width: 100%;
@@ -2379,34 +2573,56 @@ html, body {
   box-shadow: 0 4px 15px rgba(122, 99, 91, 0.15);
   transition: background-color 0.2s ease;
 }
-.proceed-checkout-btn:hover { background-color: #634F48; }
 
-/* ==========================================================================
-   5. FLUID MOBILE/TABLET RESPONSIVENESS MEDIA ADJUSTMENTS
-   ========================================================================== */
+.proceed-checkout-btn:hover {
+  background-color: #634F48;
+}
+
+/*  FLUID MOBILE/TABLET RESPONSIVENESS MEDIA ADJUSTMENTS */
+
 @media (max-width: 960px) {
   .cart-workspace-grid {
-    grid-template-columns: 1fr; 
+    grid-template-columns: 1fr;
     gap: 40px;
   }
 }
 
 @media (max-width: 600px) {
-  .cart-table th:nth-child(2), .cart-table td:nth-child(2) { display: none; } 
-  .cart-item-thumb { width: 50px; height: 50px; }
-  .cart-item-title { font-size: 0.85rem; }
-  .cart-table td { padding: 12px 8px; }
-  .cart-table th { padding: 12px 8px; font-size: 0.8rem; }
-  .cart-table-actions-row { flex-direction: column; gap: 15px; }
+
+  .cart-table th:nth-child(2),
+  .cart-table td:nth-child(2) {
+    display: none;
+  }
+
+  .cart-item-thumb {
+    width: 50px;
+    height: 50px;
+  }
+
+  .cart-item-title {
+    font-size: 0.85rem;
+  }
+
+  .cart-table td {
+    padding: 12px 8px;
+  }
+
+  .cart-table th {
+    padding: 12px 8px;
+    font-size: 0.8rem;
+  }
+
+  .cart-table-actions-row {
+    flex-direction: column;
+    gap: 15px;
+  }
 }
 
 
 /*Shop pAge Csssss Designnnnnnnnnnnnnnnnnnnnnnnnn */
 
 
-/* ==========================================================================
-   1. GLOBAL FRAMEWORK & LOADING STATES
-   ========================================================================== */
+/* GLOBAL FRAMEWORK & LOADING STATES */
 .shop-loading-state {
   text-align: center;
   padding: 140px 20px;
@@ -2416,28 +2632,26 @@ html, body {
   font-family: 'Segoe UI', sans-serif;
 }
 
-/* ==========================================================================
-   2. ULTRA-PREMIUM FULL SCREEN HERO BANNER (FIXED GREY BOX PROBLEM)
-   ========================================================================== */
+/* ULTRA-PREMIUM FULL SCREEN HERO BANNER  */
 .shop-hero-banner-container {
-  width: 100vw;             
+  width: 100vw;
   position: relative;
   left: 50%;
   right: 50%;
-  margin-left: -50vw;       
+  margin-left: -50vw;
   margin-right: -50vw;
   height: 280px;
-  
+
   /* Luxury Equestrian Deep Texture with Vignette Dark Tint */
-  background: linear-gradient(180deg, rgba(26, 22, 21, 0.75) 0%, rgba(15, 12, 12, 0.85) 100%), 
-              url('https://images.unsplash.com/photo-1598974357801-cbca100e6563?q=80&w=1600') center/cover no-repeat;
-  
+  background: linear-gradient(180deg, rgba(26, 22, 21, 0.75) 0%, rgba(15, 12, 12, 0.85) 100%),
+    url('https://images.unsplash.com/photo-1598974357801-cbca100e6563?q=80&w=1600') center/cover no-repeat;
+
   display: flex;
   align-items: center;
   justify-content: center;
   box-sizing: border-box;
   border-bottom: 3px solid #7A635B;
-  box-shadow: inset 0 -40px 100px rgba(0,0,0,0.25);
+  box-shadow: inset 0 -40px 100px rgba(0, 0, 0, 0.25);
 }
 
 .shop-hero-banner-content {
@@ -2485,7 +2699,7 @@ html, body {
 }
 
 .shop-breadcrumb-links a:hover {
-  color: #7A635B; 
+  color: #7A635B;
 }
 
 .shop-breadcrumb-links span {
@@ -2494,9 +2708,7 @@ html, body {
   font-weight: 900;
 }
 
-/* ==========================================================================
-   3. INDEPENDENT GRID CONTAINER LAYOUT
-   ========================================================================== */
+   /* INDEPENDENT GRID CONTAINER LAYOUT */
 .shop-main-content-area {
   background-color: #ffffff;
   width: 100%;
@@ -2518,9 +2730,7 @@ html, body {
   row-gap: 55px;
 }
 
-/* ==========================================================================
-   4. PREMIUM LAUNCHED PRODUCT CARDS FRAMEWORK
-   ========================================================================== */
+   /*  PREMIUM LAUNCHED PRODUCT CARDS FRAMEWORK */
 .product-card-clickable-wrapper {
   text-decoration: none;
   color: inherit;
@@ -2535,7 +2745,7 @@ html, body {
   position: relative;
   text-align: center;
   border-radius: 6px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.02); 
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.02);
   overflow: hidden;
   transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
@@ -2627,23 +2837,34 @@ html, body {
   background-color: #634F48;
 }
 
-/* ==========================================================================
-   5. HOVER CARD INTERACTION MOTIONS
-   ========================================================================== */
+   /*  HOVER CARD INTERACTION MOTIONS */
 .product-card-clickable-wrapper:hover .product-card {
   transform: translateY(-5px);
-  box-shadow: 0 12px 30px rgba(122, 99, 91, 0.08); 
+  box-shadow: 0 12px 30px rgba(122, 99, 91, 0.08);
 }
 
-.product-card-clickable-wrapper:hover .product-hover-overlay { opacity: 1; pointer-events: auto; }
-.product-card-clickable-wrapper:hover .add-to-cart-btn { transform: translateY(0); }
-.product-card-clickable-wrapper:hover .quick-actions { transform: translateX(0); }
-.product-card-clickable-wrapper:hover .product-img { transform: scale(1.06); }
-.product-card-clickable-wrapper:hover .product-title { color: #7A635B; }
+.product-card-clickable-wrapper:hover .product-hover-overlay {
+  opacity: 1;
+  pointer-events: auto;
+}
 
-/* ==========================================================================
-   6. INNER TYPOGRAPHY SYSTEMS
-   ========================================================================== */
+.product-card-clickable-wrapper:hover .add-to-cart-btn {
+  transform: translateY(0);
+}
+
+.product-card-clickable-wrapper:hover .quick-actions {
+  transform: translateX(0);
+}
+
+.product-card-clickable-wrapper:hover .product-img {
+  transform: scale(1.06);
+}
+
+.product-card-clickable-wrapper:hover .product-title {
+  color: #7A635B;
+}
+
+   /*  INNER TYPOGRAPHY SYSTEMS */
 .product-info {
   padding: 22px 14px 16px 14px;
   display: flex;
@@ -2676,40 +2897,75 @@ html, body {
   margin-bottom: 10px;
 }
 
-.product-stars { display: flex; gap: 3px; color: #F2B222; font-size: 0.88rem; }
-.no-products { font-size: 1.1rem; color: #7A635B; font-weight: bold; grid-column: 1 / -1; }
+.product-stars {
+  display: flex;
+  gap: 3px;
+  color: #F2B222;
+  font-size: 0.88rem;
+}
 
-/* ==========================================================================
-   7. FLUID RESPONSIVE MEDIA BREAKPOINTS MEDIA QUERIES
-   ========================================================================== */
+.no-products {
+  font-size: 1.1rem;
+  color: #7A635B;
+  font-weight: bold;
+  grid-column: 1 / -1;
+}
+
+   /* FLUID RESPONSIVE MEDIA BREAKPOINTS MEDIA QUERIES */
 @media (max-width: 1150px) {
-  .products-grid { grid-template-columns: repeat(3, 1fr); column-gap: 20px; }
+  .products-grid {
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 20px;
+  }
 }
 
 @media (max-width: 768px) {
-  .shop-hero-banner-container { height: 220px; }
-  .shop-page-main-title { font-size: 2.2rem; letter-spacing: 2px; }
-  .products-grid { grid-template-columns: repeat(2, 1fr); row-gap: 40px; }
-  .product-image-box { height: 250px; }
+  .shop-hero-banner-container {
+    height: 220px;
+  }
+
+  .shop-page-main-title {
+    font-size: 2.2rem;
+    letter-spacing: 2px;
+  }
+
+  .products-grid {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 40px;
+  }
+
+  .product-image-box {
+    height: 250px;
+  }
 }
 
 @media (max-width: 480px) {
-  .shop-hero-banner-container { height: 180px; }
-  .shop-page-main-title { font-size: 1.8rem; letter-spacing: 1.5px; }
-  .products-grid { grid-template-columns: 1fr; }
-  .product-image-box { height: 280px; }
+  .shop-hero-banner-container {
+    height: 180px;
+  }
+
+  .shop-page-main-title {
+    font-size: 1.8rem;
+    letter-spacing: 1.5px;
+  }
+
+  .products-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .product-image-box {
+    height: 280px;
+  }
 }
 
 
-/* Blog PAge Csssssss design */ 
+/* Blog PAge Csssssss design */
 
 
 
 
 
-/* ==========================================================================
-   1. FULL WIDTH LUXURY HERO BANNER
-   ========================================================================== */
+   /*  FULL WIDTH LUXURY HERO BANNER */
 .blog-hero-banner-container {
   width: 100vw;
   position: relative;
@@ -2718,17 +2974,17 @@ html, body {
   margin-left: -50vw;
   margin-right: -50vw;
   height: 280px;
-  
- 
-  background: linear-gradient(180deg, rgba(26, 22, 21, 0.75) 0%, rgba(15, 12, 12, 0.85) 100%), 
-              url('https://images.unsplash.com/photo-1553284965-83fd3e82fa52?q=80&w=1600') center/cover no-repeat;
-  
+
+
+  background: linear-gradient(180deg, rgba(26, 22, 21, 0.75) 0%, rgba(15, 12, 12, 0.85) 100%),
+    url('https://images.unsplash.com/photo-1553284965-83fd3e82fa52?q=80&w=1600') center/cover no-repeat;
+
   display: flex;
   align-items: center;
   justify-content: center;
   box-sizing: border-box;
-  border-bottom: 3px solid #7A635B; 
-  box-shadow: inset 0 -40px 100px rgba(0,0,0,0.25);
+  border-bottom: 3px solid #7A635B;
+  box-shadow: inset 0 -40px 100px rgba(0, 0, 0, 0.25);
 }
 
 .blog-hero-banner-content {
@@ -2771,12 +3027,17 @@ html, body {
   transition: color 0.25s ease;
 }
 
-.blog-breadcrumb-links a:hover { color: #7A635B; }
-.blog-breadcrumb-links span { margin: 0 10px; color: #7A635B; font-weight: 900; }
+.blog-breadcrumb-links a:hover {
+  color: #7A635B;
+}
 
-/* ==========================================================================
-   2. MAIN BLOCKS GRID LAYOUT SETUP (Screenshot Exact Replica)
-   ========================================================================== */
+.blog-breadcrumb-links span {
+  margin: 0 10px;
+  color: #7A635B;
+  font-weight: 900;
+}
+
+   /*  MAIN BLOCKS GRID LAYOUT SETUP  */
 .blog-main-content-area {
   background-color: #ffffff;
   width: 100%;
@@ -2789,8 +3050,8 @@ html, body {
   margin: 0 auto;
   padding: 0 20px;
   box-sizing: border-box;
-  
-  /* 2-Columns grid as per user initial screenshot, auto wraps down */
+
+ 
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   column-gap: 40px;
@@ -2805,9 +3066,8 @@ html, body {
   text-align: left;
 }
 
-/* ==========================================================================
-   3. CARD IMAGES & CONTENT HOVER ANIMATIONS
-   ========================================================================== */
+
+   /* CARD IMAGES & CONTENT HOVER ANIMATIONS */
 .blog-image-frame {
   width: 100%;
   height: 380px;
@@ -2843,15 +3103,15 @@ html, body {
   opacity: 1;
 }
 
-/* ==========================================================================
-   4. TYPOGRAPHY & META META-TAGS FORMATTING
-   ========================================================================== */
+/* 
+   TYPOGRAPHY & META META-TAGS FORMATTING
+    */
 .blog-content-info {
   padding: 25px 0 0 0;
 }
 
 .blog-card-title {
-  font-family: 'Impact', 'Arial Black', sans-serif; 
+  font-family: 'Impact', 'Arial Black', sans-serif;
   font-size: 1.85rem;
   font-weight: 900;
   color: #1A1A1A;
@@ -2862,10 +3122,10 @@ html, body {
 }
 
 .blog-card-item:hover .blog-card-title {
-  color: #7A635B; 
+  color: #7A635B;
 }
 
-/* Icons panel line styling matching folder/message structures */
+/* Icons panel line*/
 .blog-meta-tags-row {
   display: flex;
   align-items: center;
@@ -2916,38 +3176,51 @@ html, body {
 }
 
 .blog-continue-reading-btn:hover i {
-  transform: translateX(3px); 
+  transform: translateX(3px);
 }
 
-/* ==========================================================================
-   5. FLUID SYSTEM QUERIES FOR RESPONSIVENESS
-   ========================================================================== */
+/* 
+   FLUID SYSTEM QUERIES FOR RESPONSIVENESS
+    */
 @media (max-width: 900px) {
   .blog-cards-section-grid {
-    grid-template-columns: 1fr; 
+    grid-template-columns: 1fr;
     row-gap: 50px;
   }
+
   .blog-image-frame {
     height: 320px;
   }
+
   .blog-card-title {
     font-size: 1.6rem;
   }
 }
 
 @media (max-width: 480px) {
-  .blog-hero-banner-container { height: 180px; }
-  .blog-page-main-title { font-size: 1.9rem; }
-  .blog-image-frame { height: 240px; }
-  .blog-card-title { font-size: 1.4rem; }
+  .blog-hero-banner-container {
+    height: 180px;
+  }
+
+  .blog-page-main-title {
+    font-size: 1.9rem;
+  }
+
+  .blog-image-frame {
+    height: 240px;
+  }
+
+  .blog-card-title {
+    font-size: 1.4rem;
+  }
 }
 
 /* Contact Page Cssss Designnnnnn */
 
 
-/* ==========================================================================
-   1. FULL WIDTH BRAND NAVIGATION HERO BANNER
-   ========================================================================== */
+/* 
+   FULL WIDTH BRAND NAVIGATION HERO BANNER
+    */
 .contact-hero-banner-container {
   width: 100vw;
   position: relative;
@@ -2956,17 +3229,17 @@ html, body {
   margin-left: -50vw;
   margin-right: -50vw;
   height: 280px;
-  
+
   /* Luxury Equestrian Deep Texture Background */
-  background: linear-gradient(180deg, rgba(26, 22, 21, 0.75) 0%, rgba(15, 12, 12, 0.85) 100%), 
-              url('https://images.unsplash.com/photo-1601987177651-8edfe6c20009?q=80&w=1600') center/cover no-repeat;
-  
+  background: linear-gradient(180deg, rgba(26, 22, 21, 0.75) 0%, rgba(15, 12, 12, 0.85) 100%),
+    url('https://images.unsplash.com/photo-1601987177651-8edfe6c20009?q=80&w=1600') center/cover no-repeat;
+
   display: flex;
   align-items: center;
   justify-content: center;
   box-sizing: border-box;
   border-bottom: 3px solid #7A635B;
-  box-shadow: inset 0 -40px 100px rgba(0,0,0,0.25);
+  box-shadow: inset 0 -40px 100px rgba(0, 0, 0, 0.25);
 }
 
 .contact-hero-banner-content {
@@ -3009,16 +3282,23 @@ html, body {
   transition: color 0.25s ease;
 }
 
-.contact-breadcrumb-links a:hover { color: #7A635B; }
-.contact-breadcrumb-links span { margin: 0 10px; color: #7A635B; font-weight: 900; }
+.contact-breadcrumb-links a:hover {
+  color: #7A635B;
+}
 
-/* ==========================================================================
-   2. MAIN CORE INFO GRID (3 COLUMNS DESKTOP LAYOUT)
-   ========================================================================== */
+.contact-breadcrumb-links span {
+  margin: 0 10px;
+  color: #7A635B;
+  font-weight: 900;
+}
+
+/* 
+    MAIN CORE INFO GRID (3 COLUMNS DESKTOP LAYOUT)
+    */
 .contact-main-content-area {
   background-color: #ffffff;
   width: 100%;
-  padding: 90px 0 0 0; 
+  padding: 90px 0 0 0;
 }
 
 .contact-info-grid-row {
@@ -3027,7 +3307,7 @@ html, body {
   margin: 0 auto;
   padding: 0 40px;
   box-sizing: border-box;
-  
+
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 40px;
@@ -3046,7 +3326,7 @@ html, body {
 .contact-icon-circle-badge {
   width: 105px;
   height: 105px;
-  background-color: #6B5248; 
+  background-color: #6B5248;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -3061,7 +3341,7 @@ html, body {
 /* Card interactions animation effects */
 .contact-circle-card-item:hover .contact-icon-circle-badge {
   transform: translateY(-4px) scale(1.03);
-  background-color: #57423A; 
+  background-color: #57423A;
   box-shadow: 0 10px 25px rgba(107, 82, 72, 0.22);
 }
 
@@ -3081,7 +3361,7 @@ html, body {
   margin: 0;
 }
 
-/* Clickable contact hyperlinks anchor formatting nodes */
+/* Clickable contact  */
 .contact-link-anchor {
   color: #666666;
   text-decoration: none;
@@ -3093,9 +3373,9 @@ html, body {
   text-decoration: underline;
 }
 
-/* ==========================================================================
-   3. SCREENSHOT LOWER KEEP IN TOUCH WAVE BLOCKS
-   ========================================================================== */
+/* 
+    SCREENSHOT LOWER KEEP IN TOUCH WAVE BLOCKS
+    */
 .contact-keep-in-touch-wave-section {
   width: 100vw;
   position: relative;
@@ -3107,8 +3387,8 @@ html, body {
   padding: 85px 20px 105px 20px;
   box-sizing: border-box;
   text-align: center;
+
   
-  /* Modern clean multi-layered vector wave styling gradient background block */
   background: linear-gradient(to bottom, #ffffff 0%, #FAF6F4 25%, #DDD6D3 100%);
   border-top: 1px solid rgba(107, 82, 72, 0.05);
 }
@@ -3142,7 +3422,7 @@ html, body {
 .keep-in-touch-main-heading {
   font-size: 1.7rem;
   font-weight: 600;
-  color: #6B5248; 
+  color: #6B5248;
   letter-spacing: 2px;
   margin: 0 0 25px 0;
   text-transform: uppercase;
@@ -3157,21 +3437,23 @@ html, body {
   letter-spacing: 0.2px;
 }
 
-/* ==========================================================================
-   4. SYSTEM BREAKPOINTS RESPONSIVE DESIGN ADJUSTMENTS
-   ========================================================================== */
+/* 
+    SYSTEM BREAKPOINTS RESPONSIVE DESIGN ADJUSTMENTS
+    */
 @media (max-width: 900px) {
   .contact-info-grid-row {
-    grid-template-columns: 1fr; 
+    grid-template-columns: 1fr;
     gap: 50px;
     padding: 0 20px;
   }
+
   .contact-icon-circle-badge {
     width: 95px;
     height: 95px;
     font-size: 2rem;
     margin-bottom: 18px;
   }
+
   .contact-keep-in-touch-wave-section {
     margin-top: 70px;
     padding: 60px 20px 80px 20px;
@@ -3179,29 +3461,41 @@ html, body {
 }
 
 @media (max-width: 480px) {
-  .contact-hero-banner-container { height: 180px; }
-  .contact-page-main-title { font-size: 1.9rem; }
-  .keep-in-touch-main-heading { font-size: 1.4rem; }
-  .keep-in-touch-success-alert-message { font-size: 0.88rem; padding: 0 10px; }
+  .contact-hero-banner-container {
+    height: 180px;
+  }
+
+  .contact-page-main-title {
+    font-size: 1.9rem;
+  }
+
+  .keep-in-touch-main-heading {
+    font-size: 1.4rem;
+  }
+
+  .keep-in-touch-success-alert-message {
+    font-size: 0.88rem;
+    padding: 0 10px;
+  }
 }
 
-/* Sign Up Page Cssssssss */ 
+/* Sign Up Page Cssssssss */
 
 
-/* ==========================================================================
-   1. MAIN LUXURY CANVAS SETUP (FIXED CENTER & SCROLL PROBLEM)
-   ========================================================================== */
+/* 
+    MAIN LUXURY CANVAS SETUP (FIXED CENTER & SCROLL PROBLEM)
+    */
 .signup-page-main-container {
   width: 100vw;
-  height: 100vh;             
+  height: 100vh;
   background: #fbf9f8;
   display: flex;
-  align-items: center;        
-  justify-content: center;   
+  align-items: center;
+  justify-content: center;
   box-sizing: border-box;
   font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
-  overflow: hidden;           
-  position: fixed;        
+  overflow: hidden;
+  position: fixed;
   top: 0;
   left: 0;
   z-index: 9999;
@@ -3210,21 +3504,21 @@ html, body {
 /* Master Glass-Shadow Card Frame */
 .signup-workspace-card-box {
   width: 90%;
-  max-width: 960px;            
-  max-height: 92vh;       
+  max-width: 960px;
+  max-height: 92vh;
   background: #ffffff;
-  border-radius: 16px;         
-  box-shadow: 0 30px 70px rgba(122, 99, 91, 0.08), 
-              0 10px 30px rgba(0, 0, 0, 0.02);
+  border-radius: 16px;
+  box-shadow: 0 30px 70px rgba(122, 99, 91, 0.08),
+    0 10px 30px rgba(0, 0, 0, 0.02);
   display: grid;
   grid-template-columns: 1fr 1.2fr;
   overflow: hidden;
   border: 1px solid rgba(122, 99, 91, 0.08);
 }
 
-/* ==========================================================================
-   2. BRAND SIDE VIEWPORT BLOCK
-   ========================================================================== */
+/* 
+    BRAND SIDE VIEWPORT BLOCK
+    */
 .signup-promo-side-panel {
   width: 100%;
   background: url('https://images.unsplash.com/photo-1598974357801-cbca100e6563?q=80&w=1000') center/cover no-repeat;
@@ -3237,7 +3531,7 @@ html, body {
   left: 0;
   width: 100%;
   height: 100%;
-  
+
   background: linear-gradient(135deg, rgba(38, 30, 28, 0.88) 0%, rgba(107, 82, 72, 0.94) 100%);
   display: flex;
   align-items: center;
@@ -3255,7 +3549,7 @@ html, body {
   max-width: 65px;
   height: auto;
   margin-bottom: 24px;
-  filter: brightness(0) invert(1) drop-shadow(0 4px 8px rgba(0,0,0,0.15));
+  filter: brightness(0) invert(1) drop-shadow(0 4px 8px rgba(0, 0, 0, 0.15));
 }
 
 .signup-promo-content-inner h2 {
@@ -3284,9 +3578,9 @@ html, body {
   letter-spacing: 0.3px;
 }
 
-/* ==========================================================================
-   3. REGISTRATION FORM CONTROLS
-   ========================================================================== */
+/* 
+    REGISTRATION FORM CONTROLS
+    */
 .signup-form-side-panel {
   padding: 50px 60px;
   box-sizing: border-box;
@@ -3294,7 +3588,7 @@ html, body {
   flex-direction: column;
   justify-content: center;
   text-align: left;
-  overflow-y: auto; 
+  overflow-y: auto;
 }
 
 .signup-form-header {
@@ -3353,8 +3647,8 @@ html, body {
 .signup-input-group-field input:focus {
   border-color: #7A635B;
   background-color: #ffffff;
-  box-shadow: 0 5px 15px rgba(122, 99, 91, 0.05), 
-              0 0 0 4px rgba(122, 99, 91, 0.06);
+  box-shadow: 0 5px 15px rgba(122, 99, 91, 0.05),
+    0 0 0 4px rgba(122, 99, 91, 0.06);
 }
 
 /* Premium Metallic Button Scheme */
@@ -3404,29 +3698,61 @@ html, body {
   text-decoration: underline;
 }
 
-/* ==========================================================================
-   4. SYSTEM COLLAPSE BREAKPOINTS
-   ========================================================================== */
+/* 
+    SYSTEM COLLAPSE BREAKPOINTS
+    */
 @media (max-width: 900px) {
-  .signup-page-main-container { overflow-y: auto; position: absolute; }
+  .signup-page-main-container {
+    overflow-y: auto;
+    position: absolute;
+  }
+
   .signup-workspace-card-box {
     grid-template-columns: 1fr;
     max-width: 520px;
     max-height: none;
     border-radius: 12px;
   }
-  .signup-promo-side-panel { height: 160px; }
-  .signup-promo-overlay-tint { padding: 30px; }
-  .signup-promo-horse-logo { max-width: 45px; margin-bottom: 8px; }
-  .signup-promo-content-inner h2 { font-size: 1.4rem; margin-bottom: 4px; }
-  .signup-promo-divider { margin-bottom: 12px; }
-  .signup-form-side-panel { padding: 40px 30px; }
+
+  .signup-promo-side-panel {
+    height: 160px;
+  }
+
+  .signup-promo-overlay-tint {
+    padding: 30px;
+  }
+
+  .signup-promo-horse-logo {
+    max-width: 45px;
+    margin-bottom: 8px;
+  }
+
+  .signup-promo-content-inner h2 {
+    font-size: 1.4rem;
+    margin-bottom: 4px;
+  }
+
+  .signup-promo-divider {
+    margin-bottom: 12px;
+  }
+
+  .signup-form-side-panel {
+    padding: 40px 30px;
+  }
 }
 
 @media (max-width: 480px) {
-  .signup-page-main-container { padding: 25px 15px; }
-  .signup-form-side-panel { padding: 30px 20px; }
-  .signup-form-header h2 { font-size: 1.7rem; }
+  .signup-page-main-container {
+    padding: 25px 15px;
+  }
+
+  .signup-form-side-panel {
+    padding: 30px 20px;
+  }
+
+  .signup-form-header h2 {
+    font-size: 1.7rem;
+  }
 }
 
 
@@ -3434,20 +3760,20 @@ html, body {
 
 
 
-/* ==========================================================================
-   1. MAIN ENTRY SCREEN PLATFORM (FIXED CENTER & SCROLL PROBLEM)
-   ========================================================================== */
+/* 
+    MAIN ENTRY SCREEN PLATFORM 
+    */
 .login-page-main-container {
   width: 100vw;
-  height: 100vh;             
+  height: 100vh;
   background: #fbf9f8;
   display: flex;
-  align-items: center;      
-  justify-content: center;   
+  align-items: center;
+  justify-content: center;
   box-sizing: border-box;
   font-family: 'Segoe UI', system-ui, sans-serif;
-  overflow: hidden;          
-  position: fixed;        
+  overflow: hidden;
+  position: fixed;
   top: 0;
   left: 0;
   z-index: 9999;
@@ -3457,20 +3783,20 @@ html, body {
 .login-workspace-card-box {
   width: 90%;
   max-width: 920px;
-  max-height: 85vh;          
+  max-height: 85vh;
   background-color: #ffffff;
   border-radius: 16px;
-  box-shadow: 0 30px 70px rgba(122, 99, 91, 0.08), 
-              0 10px 30px rgba(0, 0, 0, 0.02);
+  box-shadow: 0 30px 70px rgba(122, 99, 91, 0.08),
+    0 10px 30px rgba(0, 0, 0, 0.02);
   display: grid;
   grid-template-columns: 1fr 1.2fr;
   overflow: hidden;
   border: 1px solid rgba(122, 99, 91, 0.08);
 }
 
-/* ==========================================================================
-   2. LUXURY TEXTURE DISPLAY BAR
-   ========================================================================== */
+/* 
+    LUXURY TEXTURE DISPLAY BAR
+    */
 .login-promo-side-panel {
   width: 100%;
   background: url('https://images.unsplash.com/photo-1553284965-83fd3e82fa52?q=80&w=1000') center/cover no-repeat;
@@ -3500,7 +3826,7 @@ html, body {
   max-width: 65px;
   height: auto;
   margin-bottom: 24px;
-  filter: brightness(0) invert(1) drop-shadow(0 4px 8px rgba(0,0,0,0.15));
+  filter: brightness(0) invert(1) drop-shadow(0 4px 8px rgba(0, 0, 0, 0.15));
 }
 
 .login-promo-content-inner h2 {
@@ -3528,9 +3854,9 @@ html, body {
   letter-spacing: 0.3px;
 }
 
-/* ==========================================================================
-   3. CLEAN CREDENTIAL PANELS
-   ========================================================================== */
+/* 
+    CLEAN CREDENTIAL PANELS
+    */
 .login-form-side-panel {
   padding: 60px 55px;
   box-sizing: border-box;
@@ -3595,8 +3921,8 @@ html, body {
 .login-input-group-field input:focus {
   border-color: #7A635B;
   background-color: #ffffff;
-  box-shadow: 0 5px 15px rgba(122, 99, 91, 0.05), 
-              0 0 0 4px rgba(122, 99, 91, 0.06);
+  box-shadow: 0 5px 15px rgba(122, 99, 91, 0.05),
+    0 0 0 4px rgba(122, 99, 91, 0.06);
 }
 
 .login-forgot-password-row {
@@ -3660,40 +3986,78 @@ html, body {
   text-decoration: underline;
 }
 
-/* ==========================================================================
-   4. LAYERS BREAKPOINTS MEDIA SYSTEM
-   ========================================================================== */
+/* 
+   LAYERS BREAKPOINTS MEDIA SYSTEM
+    */
 @media (max-width: 850px) {
-  .login-page-main-container { height: auto; padding: 60px 20px; position: absolute; overflow-y: auto; }
-  .login-workspace-card-box { grid-template-columns: 1fr; max-width: 460px; max-height: none; border-radius: 12px; }
-  .login-promo-side-panel { height: 160px; }
-  .login-promo-overlay-tint { padding: 30px; }
-  .login-promo-horse-logo { max-width: 45px; margin-bottom: 8px; }
-  .login-promo-content-inner h2 { font-size: 1.4rem; margin-bottom: 4px; }
-  .login-promo-divider { margin-bottom: 12px; }
-  .login-form-side-panel { padding: 40px 30px; }
+  .login-page-main-container {
+    height: auto;
+    padding: 60px 20px;
+    position: absolute;
+    overflow-y: auto;
+  }
+
+  .login-workspace-card-box {
+    grid-template-columns: 1fr;
+    max-width: 460px;
+    max-height: none;
+    border-radius: 12px;
+  }
+
+  .login-promo-side-panel {
+    height: 160px;
+  }
+
+  .login-promo-overlay-tint {
+    padding: 30px;
+  }
+
+  .login-promo-horse-logo {
+    max-width: 45px;
+    margin-bottom: 8px;
+  }
+
+  .login-promo-content-inner h2 {
+    font-size: 1.4rem;
+    margin-bottom: 4px;
+  }
+
+  .login-promo-divider {
+    margin-bottom: 12px;
+  }
+
+  .login-form-side-panel {
+    padding: 40px 30px;
+  }
 }
 
 @media (max-width: 480px) {
-  .login-page-main-container { padding: 25px 15px; }
-  .login-form-side-panel { padding: 30px 20px; }
-  .login-form-header h2 { font-size: 1.7rem; }
+  .login-page-main-container {
+    padding: 25px 15px;
+  }
+
+  .login-form-side-panel {
+    padding: 30px 20px;
+  }
+
+  .login-form-header h2 {
+    font-size: 1.7rem;
+  }
 }
 
-/* Admin Panel Cssss Designnnn */ 
+/* Admin Panel Cssss Designnnn */
 
 /* Dashboard Designnnn*/
 
 
-/* ==========================================================================
-   1. CORE GRID LAYOUT STRUCTURAL SETUP
-   ========================================================================== */
+
 .admin-panel-layout-wrapper {
   width: 100vw;
   height: 100vh;
   display: grid;
   grid-template-columns: 260px 1fr;
-  background-color: #f8fafc; /* Clean off-white workspace background */
+  background-color: #f8fafc;
+  /* Clean off-white workspace background */
   font-family: 'Segoe UI', system-ui, sans-serif;
   overflow: hidden;
   position: fixed;
@@ -3701,11 +4065,10 @@ html, body {
   left: 0;
 }
 
-/* ==========================================================================
-   2. ORIGINAL NAVY BLUE SIDEBAR STYLING (From image_b883d4.png)
-   ========================================================================== */
+
 .admin-sidebar-navigation {
-  background-color: #1e293b; /* Deep Navy/Dark Slate background */
+  background-color: #1e293b;
+
   height: 100%;
   padding: 40px 20px;
   box-sizing: border-box;
@@ -3730,14 +4093,13 @@ html, body {
   font-size: 0.8rem;
   font-weight: 700;
   color: #ffffff;
-  background-color: #2563eb; /* Royal Blue Admin Badge */
+  background-color: #2563eb;
   padding: 6px 16px;
   border-radius: 6px;
   letter-spacing: 0.5px;
   display: inline-block;
 }
 
-/* Sidebar Navigation Items */
 .admin-sidebar-menu-links ul {
   list-style: none;
   padding: 0;
@@ -3756,7 +4118,7 @@ html, body {
   padding: 14px 16px;
   font-size: 1rem;
   font-weight: 600;
-  color: #94a3b8; /* Muted text for inactive state */
+  color: #94a3b8;
   border-radius: 6px;
   cursor: pointer;
   text-align: center;
@@ -3768,15 +4130,12 @@ html, body {
   background-color: rgba(255, 255, 255, 0.05);
 }
 
-/* Active Page Style (From image_b883d4.png Active Button State) */
 .admin-sidebar-menu-links ul li.active-menu-node {
-  background-color: #2563eb; /* Vibrant Royal Blue Accent */
+  background-color: #2563eb;
   color: #ffffff;
 }
 
-/* ==========================================================================
-   3. RIGHT CONTENT VIEWS WORKSPACE
-   ========================================================================== */
+
 .admin-workspace-content-canvas {
   height: 100%;
   overflow-y: auto;
@@ -3794,7 +4153,6 @@ html, body {
   margin: 0 0 30px 0;
 }
 
-/* STATISTICS NUMERICAL CARDS MATRIX */
 .admin-statistics-cards-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -3807,14 +4165,24 @@ html, body {
   border-radius: 10px;
   border: 1px solid #e2e8f0;
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
-  text-align: left; /* Kept clean modern left-align */
+  text-align: left;
 }
 
-/* Theme Borders matching Blue Theme */
-.card-blue { border-left: 5px solid #2563eb; }
-.card-green { border-left: 5px solid #10b981; }
-.card-orange { border-left: 5px solid #f59e0b; }
-.card-pink { border-left: 5px solid #ec4899; }
+.card-blue {
+  border-left: 5px solid #2563eb;
+}
+
+.card-green {
+  border-left: 5px solid #10b981;
+}
+
+.card-orange {
+  border-left: 5px solid #f59e0b;
+}
+
+.card-pink {
+  border-left: 5px solid #ec4899;
+}
 
 .stat-card-box h3 {
   font-size: 2.2rem;
@@ -3837,14 +4205,14 @@ html, body {
   border-top: 1px solid #e2e8f0;
 }
 
-/* LOWER DASHBOARD ELEMENTS (Table & Actions) */
 .dashboard-lower-grid {
   display: grid;
   grid-template-columns: 2fr 1fr;
   gap: 25px;
 }
 
-.table-container-box, .actions-container-box {
+.table-container-box,
+.actions-container-box {
   background-color: #ffffff;
   padding: 24px;
   border-radius: 10px;
@@ -3897,11 +4265,22 @@ html, body {
   font-size: 11px;
   font-weight: 700;
 }
-.status-delivered { background-color: #dcfce7; color: #15803d; }
-.status-pending { background-color: #fef3c7; color: #b45309; }
-.status-shipped { background-color: #e0f2fe; color: #0369a1; }
 
-/* Quick Actions Side Panel */
+.status-delivered {
+  background-color: #dcfce7;
+  color: #15803d;
+}
+
+.status-pending {
+  background-color: #fef3c7;
+  color: #b45309;
+}
+
+.status-shipped {
+  background-color: #e0f2fe;
+  color: #0369a1;
+}
+
 .actions-btn-stack {
   display: flex;
   flex-direction: column;
@@ -3920,9 +4299,17 @@ html, body {
   transition: opacity 0.2s;
 }
 
-.action-btn:hover { opacity: 0.9; }
-.btn-primary { background-color: #2563eb; } /* Matching royal blue button */
-.btn-success { background-color: #10b981; }
+.action-btn:hover {
+  opacity: 0.9;
+}
+
+.btn-primary {
+  background-color: #2563eb;
+}
+
+.btn-success {
+  background-color: #10b981;
+}
 
 .system-status-widget {
   padding: 15px;
@@ -3943,9 +4330,9 @@ html, body {
   color: #64748b;
 }
 
-/* =========================
+/* 
    RESPONSIVE DESIGN
-========================= */
+ */
 
 /* Tablet */
 @media screen and (max-width: 1024px) {
@@ -3968,7 +4355,7 @@ html, body {
 }
 
 
-/* Mobile */
+
 @media screen and (max-width: 768px) {
 
   .admin-panel-layout-wrapper {
@@ -4060,7 +4447,7 @@ html, body {
 }
 
 
-/* Small Mobile */
+
 @media screen and (max-width: 480px) {
 
   .admin-core-render-viewport {
@@ -4097,7 +4484,7 @@ html, body {
 
 /*  Customer Admin Csss Designnnnn */
 
-/* --- Global Reset & Variables --- */
+
 :root {
   --primary-color: #2563eb;
   --danger-color: #dc2626;
@@ -4116,7 +4503,6 @@ html, body {
   color: var(--text-dark);
 }
 
-/* --- Sidebar Styling --- */
 .admin-sidebar-navigation {
   width: 260px;
   background-color: var(--bg-dark);
@@ -4161,16 +4547,17 @@ html, body {
   font-weight: 500;
 }
 
-.admin-sidebar-menu-links li:hover, 
+.admin-sidebar-menu-links li:hover,
 .active-menu-node {
   background-color: rgba(255, 255, 255, 0.1);
 }
+
 .active-menu-node .admin-menu-nav-link {
   color: #fff;
   font-weight: 700;
 }
 
-/* --- Main Dashboard Content --- */
+
 .admin-workspace-content-canvas {
   flex: 1;
   padding: 2rem;
@@ -4205,22 +4592,22 @@ html, body {
   opacity: 0.9;
 }
 
-/* --- Responsive Table --- */
+
 .admin-table-container-card {
   background: white;
   border-radius: 8px;
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
-  overflow-x: auto; 
+  overflow-x: auto;
 }
 
 .admin-custom-data-table {
   width: 100%;
   border-collapse: collapse;
   text-align: left;
-  min-width: 600px; 
+  min-width: 600px;
 }
 
-.admin-custom-data-table th, 
+.admin-custom-data-table th,
 .admin-custom-data-table td {
   padding: 1rem 1.5rem;
   border-bottom: 1px solid var(--border-color);
@@ -4241,13 +4628,14 @@ html, body {
   color: var(--text-muted);
 }
 
-/* --- Action Buttons --- */
+
 .table-action-btn-group {
   display: flex;
   gap: 0.5rem;
 }
 
-.row-edit-btn, .row-delete-btn {
+.row-edit-btn,
+.row-delete-btn {
   padding: 0.4rem 0.8rem;
   border: none;
   border-radius: 4px;
@@ -4266,7 +4654,7 @@ html, body {
   color: var(--danger-color);
 }
 
-/* --- Modals (Popup Forms) --- */
+
 .modal-overlay-blur {
   position: fixed;
   top: 0;
@@ -4274,7 +4662,7 @@ html, body {
   width: 100vw;
   height: 100vh;
   background: rgba(15, 23, 42, 0.6);
- 
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -4282,7 +4670,8 @@ html, body {
   padding: 1rem;
 }
 
-.modal-workspace-card, .delete-alert-popup-box {
+.modal-workspace-card,
+.delete-alert-popup-box {
   background: white;
   padding: 2rem;
   border-radius: 8px;
@@ -4299,7 +4688,10 @@ html, body {
   margin-bottom: 1.5rem;
 }
 
-.modal-card-header h2 { margin: 0; font-size: 1.3rem; }
+.modal-card-header h2 {
+  margin: 0;
+  font-size: 1.3rem;
+}
 
 .modal-close-icon-btn {
   background: none;
@@ -4340,14 +4732,16 @@ html, body {
   box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
 }
 
-.modal-action-footer-buttons, .delete-modal-action-row {
+.modal-action-footer-buttons,
+.delete-modal-action-row {
   display: flex;
   justify-content: flex-end;
   gap: 0.75rem;
   margin-top: 1rem;
 }
 
-.btn-secondary-cancel, .cancel-destruction-trigger {
+.btn-secondary-cancel,
+.cancel-destruction-trigger {
   background: #f1f5f9;
   border: none;
   padding: 0.65rem 1.2rem;
@@ -4382,14 +4776,13 @@ html, body {
   padding: 2rem !important;
 }
 
-/* --- MEDIA QUERIES (Responsive Design) --- */
 
-/* टैबलेट और छोटे लैपटॉप के लिए */
+
 @media (max-width: 768px) {
   .admin-panel-layout-wrapper {
-    flex-direction: column; 
+    flex-direction: column;
   }
-  
+
   .admin-sidebar-navigation {
     width: 100%;
     padding: 1rem;
@@ -4434,11 +4827,9 @@ html, body {
 /* Product Adminnnn Csss Designnnnn*/
 
 
-/* ==========================================================================
-   CUSTOMER & PRODUCT ADMIN SYSTEM - MASTER STYLESHEET
-   ========================================================================== */
 
-/* --- 1. Global Reset & Modern Theme Variables --- */
+
+
 :root {
   --primary-color: #2563eb;
   --primary-hover: #1d4ed8;
@@ -4462,7 +4853,6 @@ html, body {
   color: var(--text-dark);
 }
 
-/* --- 2. Master Sidebar Navigation --- */
 .admin-sidebar-navigation {
   width: 260px;
   background-color: var(--bg-dark);
@@ -4540,7 +4930,6 @@ html, body {
   font-weight: 700;
 }
 
-/* --- 3. Main Dashboard Content Area --- */
 .admin-workspace-content-canvas {
   flex: 1;
   padding: 2.5rem;
@@ -4589,23 +4978,23 @@ html, body {
   transform: translateY(-1px);
 }
 
-/* --- 4. Responsive Unified Data Table --- */
+
 .admin-table-container-card {
   background: #ffffff;
   border-radius: 12px;
   border: 1px solid var(--border-color);
   box-shadow: var(--card-shadow);
-  overflow-x: auto; 
+  overflow-x: auto;
 }
 
 .admin-custom-data-table {
   width: 100%;
   border-collapse: collapse;
   text-align: left;
-  min-width: 800px; 
+  min-width: 800px;
 }
 
-.admin-custom-data-table th, 
+.admin-custom-data-table th,
 .admin-custom-data-table td {
   padding: 1.1rem 1.5rem;
   border-bottom: 1px solid var(--border-color);
@@ -4637,7 +5026,7 @@ html, body {
   letter-spacing: 1px;
 }
 
-/* --- 5. Image Preview Custom Component --- */
+
 .product-avatar-preview {
   width: 46px;
   height: 46px;
@@ -4648,13 +5037,14 @@ html, body {
   background-color: #f1f5f9;
 }
 
-/* --- 6. Table Row Actions --- */
+
 .table-action-btn-group {
   display: flex;
   gap: 0.6rem;
 }
 
-.row-edit-btn, .row-delete-btn {
+.row-edit-btn,
+.row-delete-btn {
   padding: 0.45rem 0.9rem;
   border: none;
   border-radius: 6px;
@@ -4682,7 +5072,7 @@ html, body {
   background-color: #fee2e2;
 }
 
-/* --- 7. Modals & Overlay Blurs --- */
+
 .modal-overlay-blur {
   position: fixed;
   top: 0;
@@ -4699,7 +5089,8 @@ html, body {
   box-sizing: border-box;
 }
 
-.modal-workspace-card, .delete-alert-popup-box {
+.modal-workspace-card,
+.delete-alert-popup-box {
   background: #ffffff;
   padding: 2.25rem;
   border-radius: 14px;
@@ -4712,8 +5103,15 @@ html, body {
 }
 
 @keyframes modalSlideUp {
-  from { transform: translateY(20px); opacity: 0; }
-  to { transform: translateY(0); opacity: 1; }
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
 .modal-card-header {
@@ -4723,8 +5121,8 @@ html, body {
   margin-bottom: 1.75rem;
 }
 
-.modal-card-header h2 { 
-  margin: 0; 
+.modal-card-header h2 {
+  margin: 0;
   font-size: 1.35rem;
   font-weight: 700;
   letter-spacing: -0.3px;
@@ -4787,15 +5185,17 @@ html, body {
   box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.1);
 }
 
-/* --- 8. Modal Footer Action Rows --- */
-.modal-action-footer-buttons, .delete-modal-action-row {
+
+.modal-action-footer-buttons,
+.delete-modal-action-row {
   display: flex;
   justify-content: flex-end;
   gap: 0.75rem;
   margin-top: 1.25rem;
 }
 
-.btn-secondary-cancel, .cancel-destruction-trigger {
+.btn-secondary-cancel,
+.cancel-destruction-trigger {
   background-color: #f1f5f9;
   color: #475569;
   border: none;
@@ -4807,7 +5207,8 @@ html, body {
   transition: background 0.2s;
 }
 
-.btn-secondary-cancel:hover, .cancel-destruction-trigger:hover {
+.btn-secondary-cancel:hover,
+.cancel-destruction-trigger:hover {
   background-color: #e2e8f0;
 }
 
@@ -4827,7 +5228,7 @@ html, body {
   background-color: var(--primary-hover);
 }
 
-/* Danger Confirm Dialog Specifics */
+
 .delete-alert-popup-box h3 {
   margin: 0 0 0.75rem 0;
   font-size: 1.3rem;
@@ -4864,16 +5265,13 @@ html, body {
   font-weight: 500;
 }
 
-/* ==========================================================================
-   9. MEDIA QUERIES (Ultra Responsive Logic)
-   ========================================================================== */
 
-/* --- Tablet Breakpoint (Sidebar Shifts to Nav-bar) --- */
+
 @media (max-width: 992px) {
   .admin-panel-layout-wrapper {
     flex-direction: column;
   }
-  
+
   .admin-sidebar-navigation {
     width: 100%;
     padding: 1.25rem 2rem;
@@ -4906,7 +5304,6 @@ html, body {
   }
 }
 
-/* --- Mobile View Breakpoint --- */
 @media (max-width: 640px) {
   .admin-sidebar-navigation {
     flex-direction: column;
@@ -4923,11 +5320,11 @@ html, body {
     overflow-x: auto;
     width: 100%;
     padding-bottom: 0.4rem;
-   
+
   }
-  
+
   .admin-sidebar-menu-links ul::-webkit-scrollbar {
-    display: none; /* Chrome/Safari */
+    display: none;
   }
 
   .customer-view-header-row {

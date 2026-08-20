@@ -1,13 +1,14 @@
 import React from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { useCart } from "react-use-cart";
+import { getUser } from "../../utils/auth";
 
 function Nav() {
   const { totalUniqueItems, emptyCart } = useCart();
   const navigate = useNavigate();
 
 
-  const user = JSON.parse(localStorage.getItem("user"));
+  const user = getUser();
 
 
   const handleLogout = () => {
@@ -73,7 +74,18 @@ function Nav() {
                 </Link>
               </li>
 
-              <li onClick={handleLogout} style={{ cursor: "pointer", fontWeight: "bold", color: "#7A635B" }}>LOGOUT</li>
+              {user ? (
+                <li onClick={handleLogout} style={{ cursor: "pointer", fontWeight: "bold", color: "#7A635B" }}>LOGOUT</li>
+              ) : (
+                <>
+                  <li>
+                    <Link to="/login" style={{ textDecoration: "none", color: "inherit" }}>LOGIN</Link>
+                  </li>
+                  <li>
+                    <Link to="/signup" style={{ textDecoration: "none", color: "inherit" }}>SIGNUP</Link>
+                  </li>
+                </>
+              )}
 
 
             </ul>

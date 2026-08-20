@@ -1,5 +1,4 @@
-import React, { useEffect } from "react"; 
-import { useNavigate } from "react-router-dom"; 
+import React from "react"; 
 import Nav from "../User Panel/nav";
 import Banner from "../User Panel/banner";
 import Learnmore from "../User Panel/learnmore";
@@ -12,20 +11,8 @@ import Latestnews from "../User Panel/latestnews";
 import Footer from "../User Panel/footerbanner";
 
 function Home() {
-  const navigate = useNavigate();
-  const loggedInUser = localStorage.getItem("user");
-
-  useEffect(() => {
- 
-    if (!loggedInUser) {
-      alert("Please login first to access this page!");
-      navigate("/login");
-    }
-  }, [loggedInUser, navigate]);
-
-  if (!loggedInUser) {
-    return null; 
-  }
+  // Home is public now — anyone can browse it without logging in.
+  // Login is only required when the user tries to buy something.
 
   return (
     <>

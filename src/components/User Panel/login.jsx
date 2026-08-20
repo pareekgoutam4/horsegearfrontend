@@ -5,6 +5,14 @@ import axios from "axios";
 function Login() {
   const navigate = useNavigate();
 
+  // If the user was sent here from "Add to Cart" / a protected page,
+  // this brings them back there after a successful login.
+  const goToNextPage = () => {
+    const redirectPath = localStorage.getItem("redirectAfterLogin");
+    localStorage.removeItem("redirectAfterLogin");
+    navigate(redirectPath || "/home");
+  };
+
   const [loginData, setLoginData] = useState({
     email: "",
     password: ""
@@ -78,7 +86,7 @@ function Login() {
   })
 );
 
-      navigate("/home");
+      goToNextPage();
     } else {
       alert("Invalid Email Or Password");
     }

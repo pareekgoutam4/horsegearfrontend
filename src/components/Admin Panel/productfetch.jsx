@@ -37,7 +37,7 @@ useEffect(() => {
 
   if (!user) {
     alert("Please login first!");
-    navigate("/dailylogin");
+    navigate("/login");
     return;
   }
 
@@ -241,7 +241,7 @@ useEffect(() => {
         <div className="modal-overlay-blur">
           <div className="delete-alert-popup-box">
             <h3>Confirm Destruction</h3>
-            <p>Are you sure you want to permanently erase this product record from your remote cluster? This action is irreversible.</p>
+            <p>Are you sure you want to permanently erase</p>
             <div className="delete-modal-action-row">
               <button className="cancel-destruction-trigger" onClick={() => setdeleteconfirm(null)}>Cancel</button>
               <button className="confirm-destruction-trigger" onClick={() => { remove(deleteconfirm); setdeleteconfirm(null); }}>Delete Record</button>

@@ -19,6 +19,7 @@ import Login from './components/User Panel/login';
 import Dashboard from './components/Admin Panel/dashboard';
 import Customer from './components/Admin Panel/customer';
 import Fetch from './components/Admin Panel/productfetch';
+import ProtectedRoute from './components/ProtectedRoute';
 
 
 function App() {
@@ -32,19 +33,20 @@ function App() {
       <Routes>
 
 
-
-        <Route path = "/" element = {<Signup/>}/>
+        <Route path = "/" element = {<Home/>}/>
+        <Route path = "/home" element = {<Home/>}/>
         <Route path = "/signup" element = {<Signup/>}/>
         <Route path = "/login" element = {<Login/>}/>
-        <Route path = "/home" element = {<Home/>}/>
         <Route path = "/product/:id" element = {<Productdetail/>}/>
-        <Route path = "/cart" element = {<Cart/>}/>
         <Route path = "/shop" element = {<Shop/>}/>
         <Route path = "/blog" element = {<Blog/>}/>
         <Route path = "/contact" element = {<Contact/>}/>
-        <Route path = "/admin/dashboard" element = {<Dashboard/>}/>
-        <Route path = "/customers" element = {<Customer/>}/>
-        <Route path = "/adminproducts" element = {<Fetch/>}/>
+
+        <Route path = "/cart" element = {<ProtectedRoute><Cart/></ProtectedRoute>}/>
+
+        <Route path = "/admin/dashboard" element = {<ProtectedRoute adminOnly><Dashboard/></ProtectedRoute>}/>
+        <Route path = "/customers" element = {<ProtectedRoute adminOnly><Customer/></ProtectedRoute>}/>
+        <Route path = "/adminproducts" element = {<ProtectedRoute adminOnly><Fetch/></ProtectedRoute>}/>
        
       </Routes>
       </HashRouter>

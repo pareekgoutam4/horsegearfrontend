@@ -1,12 +1,14 @@
 import React, { useState, useEffect } from "react";
-import { useParams, Link } from "react-router-dom";
+import { useParams, Link, useNavigate } from "react-router-dom";
 import { useCart } from "react-use-cart";
 import Nav from "../User Panel/nav";
 import Footer from "../User Panel/footerbanner";
+import { isLoggedIn, requireLogin } from "../../utils/auth";
 
 
 function Productdetail() {
   const { id } = useParams();
+  const navigate = useNavigate();
   const [productslist, setproductslist] = useState([]);
   const [loading, setLoading] = useState(true);
   const [quantity, setQuantity] = useState(1);
@@ -132,6 +134,11 @@ function Productdetail() {
               
             
               <button className="detail-add-cart-btn"onClick={() => {
+                  if (!isLoggedIn()) {
+                    requireLogin(navigate, `/product/${product._id}`);
+                    return;
+                  }
+
                   addItem({
                     id: product._id,
                     title: product.title,

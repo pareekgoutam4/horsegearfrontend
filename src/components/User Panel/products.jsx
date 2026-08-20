@@ -1,10 +1,12 @@
 import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useCart } from "react-use-cart"; 
+import { isLoggedIn, requireLogin } from "../../utils/auth";
 
 function Products() {
   const [productslist, setproductslist] = useState([]);
   const [loading, setLoading] = useState(true);
+  const navigate = useNavigate();
 
  
   const { addItem } = useCart();
@@ -57,7 +59,11 @@ function Products() {
               
                       <button className="add-to-cart-btn" onClick={(e) => { 
                           e.preventDefault();
-                          
+
+                          if (!isLoggedIn()) {
+                            requireLogin(navigate, "/");
+                            return;
+                          }
                      
                           addItem({ 
                             id: product._id, 

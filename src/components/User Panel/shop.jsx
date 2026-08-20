@@ -1,14 +1,16 @@
 import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useCart } from "react-use-cart";
 import Nav from "../User Panel/nav";
 import Footer from "../User Panel/footerbanner";
+import { isLoggedIn, requireLogin } from "../../utils/auth";
 
 
 function Shop() {
   const [productslist, setproductslist] = useState([]);
   const [loading, setLoading] = useState(true);
   const { addItem } = useCart();
+  const navigate = useNavigate();
 
   
   async function Getproduct() {
@@ -77,6 +79,12 @@ function Shop() {
                           className="add-to-cart-btn"
                           onClick={(e) => { 
                             e.preventDefault(); 
+
+                            if (!isLoggedIn()) {
+                              requireLogin(navigate, "/shop");
+                              return;
+                            }
+
                             addItem({ 
                               id: product._id, 
                               title: product.title, 

@@ -52,7 +52,7 @@ function Dashboard() {
 
   if (!user) {
     alert("Please login first!");
-    navigate("/dailylogin");
+    navigate("/login");
     return;
   }
 

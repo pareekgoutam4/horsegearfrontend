@@ -18,7 +18,7 @@ function Customer() {
 
   if (!user) {
     alert("Please login first!");
-    navigate("/dailylogin");
+    navigate("/login");
     return;
   }
 
