@@ -15,6 +15,7 @@ body {
 }
 
 /* 2. Main Wrapper */
+/* 2. Main Wrapper */
 .fullnav {
   width: 100vw;
   position: relative;
@@ -50,6 +51,7 @@ body {
   font-size: 0.85rem;
   font-weight: 400;
   letter-spacing: 0.5px;
+  margin: 0;
 }
 
 /* 4. Navbar Style */
@@ -61,9 +63,10 @@ body {
   padding: 20px 5%;
   width: 100%;
   border-bottom: 1px solid #eeeeee;
+  position: relative;
 }
 
-/* LOGO SECTION  */
+/* LOGO SECTION */
 .logo {
   display: flex;
   align-items: center;
@@ -76,14 +79,7 @@ body {
   object-fit: contain;
 }
 
-.logo h1 {
-  font-size: 1.8rem;
-  font-weight: 800;
-  letter-spacing: 1px;
-  color: #111111;
-}
-
-/* Menu & Cart Section */
+/* Menu & Cart Section (DESKTOP) */
 .menu {
   display: flex;
   align-items: center;
@@ -94,6 +90,8 @@ body {
   display: flex;
   list-style: none;
   gap: 30px;
+  margin: 0;
+  padding: 0;
 }
 
 .menu ul li {
@@ -133,12 +131,19 @@ body {
   text-align: center;
 }
 
+/* DESKTOP PAR MOBILE CONTROLS HIDE */
+.mobile-toggle-btn,
+.drawer-close-btn,
+.menu-backdrop {
+  display: none;
+}
 
-/* RESPONSIVE DESIGN  */
 
+/* =========================================
+   RESPONSIVE DESIGN (Tablets & Mobile)
+   ========================================= */
 
 @media (max-width: 1024px) {
-
   .topbar,
   .navbar {
     padding-left: 3%;
@@ -155,29 +160,97 @@ body {
   }
 
   .navbar {
-    flex-direction: column;
-    gap: 20px;
-    padding: 20px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
   }
 
+  /* Hamburger Toggle Button */
+  .mobile-toggle-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 1.2rem;
+    color: #111111;
+    cursor: pointer;
+  }
+
+  /* Background Dimmer Overlay */
+  .menu-backdrop {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.45);
+    backdrop-filter: blur(2px);
+    z-index: 998;
+  }
+
+  /* Slide-In Drawer from Right */
   .menu {
+    position: fixed;
+    top: 0;
+    right: -300px;
+    width: 270px;
+    height: 100vh;
+    background-color: #ffffff;
+    box-shadow: -4px 0 20px rgba(0, 0, 0, 0.15);
     flex-direction: column;
-    width: 100%;
-    gap: 20px;
+    align-items: flex-start;
+    padding: 65px 25px 30px;
+    gap: 25px;
+    transition: right 0.35s ease-in-out;
+    z-index: 999;
   }
 
+  /* When Menu is Opened */
+  .menu.drawer-open {
+    right: 0;
+  }
+
+  /* Close (X) Button inside drawer */
+  .drawer-close-btn {
+    display: block;
+    position: absolute;
+    top: 18px;
+    right: 20px;
+    font-size: 1.4rem;
+    color: #333333;
+    background: none;
+    border: none;
+    cursor: pointer;
+    line-height: 1;
+  }
+
+  /* Menu Links */
   .menu ul {
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     width: 100%;
-    gap: 15px;
+    gap: 0;
   }
 
   .menu ul li {
     width: 100%;
-    text-align: center;
-    padding: 8px 0;
-    border-bottom: 1px solid #f9f9f9;
+    text-align: left;
+    padding: 14px 0;
+    border-bottom: 1px solid #f0f0f0;
+    font-size: 0.9rem;
+  }
+
+  /* Cart alignment inside mobile drawer */
+  .cart {
+    width: 100%;
+    padding-top: 10px;
+    justify-content: flex-start;
   }
 }
 
